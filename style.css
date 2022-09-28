@@ -1,0 +1,56 @@
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 500;
+}
+
+:root {
+    --clr-red: rgb(255, 0, 0);
+    --clr-white: rgb(255, 255, 255);
+    --clr-black: rgb(0, 0, 0);
+    --clr-grey: rgb(150, 150, 150);
+    --font: arial;
+}
+
+.sidebar {
+    background-color: var(--clr-grey);
+    margin: 0px;
+    height: 100vh;
+    width: 120px;
+    position: fixed;
+    /* background-image: linear-gradient(red, blue); */
+    z-index: 1;
+}
+
+#sidebar-icons,
+#mijn-logo,
+#oba-logo {
+    list-style: none;
+    color: var(--clr-red);
+    font-size: 440%;
+    position: relative;
+    justify-self: center;
+
+
+    left: 5px;
+}
+
+#mijn-logo,
+#oba-logo {
+    font-family: var(--font);
+}
+
+#mijn-logo {
+    font-size: 50px;
+}
+
+#oba-logo {
+    rotate: 90deg;
+
+    
+    line-height: 200px;
+}
+
+h1{
+    opacity: 0.2;
+}
