@@ -7,8 +7,8 @@
     --clr-black: rgb(0, 0, 0);
     --clr-grey: rgb(150, 150, 150);
     --clr-container-books: rgb(180, 180, 180);
-    --clr-text: rgb(250, 250, 250);
-    --clr-text-border: rgb(235, 235, 235);
+    --clr-text: rgb(245, 245, 245);
+    --clr-text-border: rgb(230, 230, 230);
     --font: arial;
 }
 
@@ -185,6 +185,8 @@ h1 {
     left: 0;
     right: 0;
     top: 17%;
+
+
 
     display: flex;
     flex-wrap: wrap;
