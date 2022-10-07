@@ -48,27 +48,27 @@
                         transform="matrix(0, 1, -1, 0, 575.718979, 51.827805)" />
                 </svg>
             </a>
-            <a href="https://www.youtube.com"><i id="sidebar-icons-items" class="fa fa-home" aria-hidden="true"><span
+            <a href="#"><i id="sidebar-icons-items" class="fa fa-home" aria-hidden="true"><span
                         class="menu-text"> &nbsp;&nbsp;&nbsp;Home</span></i></a>
-            <a href="https://www.youtube.com"><i id="sidebar-icons-items" class="fa fa-book" aria-hidden="true"><span
+            <a href="#"><i id="sidebar-icons-items" class="fa fa-book" aria-hidden="true"><span
                         class="menu-text-br">&nbsp;&nbsp;&nbsp;&nbsp;Uitleningen<br>&nbsp;&nbsp;&nbsp;&nbsp;Verlengen</span></i></a>
-            <a href="https://www.youtube.com"><i id="sidebar-icons-items" class="fa fa-history" aria-hidden="true"><span
+            <a href="#"><i id="sidebar-icons-items" class="fa fa-history" aria-hidden="true"><span
                         class="menu-text"> &nbsp;&nbsp;&nbsp;&nbsp;Geschiedenis</span></i></a>
-            <a href="https://www.youtube.com"><i id="sidebar-icons-items" class="fa fa-list" aria-hidden="true"><span
+            <a href="#"><i id="sidebar-icons-items" class="fa fa-list" aria-hidden="true"><span
                         class="menu-text"> &nbsp;&nbsp;&nbsp;Mijn lijst</span></i></a>
-            <a href="https://www.youtube.com"><i id="sidebar-icons-items-current" class="fa fa-thumbs-up" aria-hidden="true"><span
+            <a href="#"><i id="sidebar-icons-items-current" class="fa fa-thumbs-up" aria-hidden="true"><span
                         class="menu-text-current">&nbsp;&nbsp;&nbsp;&nbsp;Aanbevelingen</span></i></a>
-            <a href="https://www.youtube.com"><i id="sidebar-icons-items" class="fa fa-check" aria-hidden="true"><span
+            <a href="#"><i id="sidebar-icons-items" class="fa fa-check" aria-hidden="true"><span
                         class="menu-text"> &nbsp;&nbsp;&nbsp;Reservaties</span></i></a>
-            <a href="https://www.youtube.com"><i id="sidebar-icons-items" class="fa fa-shopping-cart" aria-hidden="true"><span 
+            <a href="#"><i id="sidebar-icons-items" class="fa fa-shopping-cart" aria-hidden="true"><span 
                         class="menu-text"> &nbsp;&nbsp;&nbsp;Betalingen</span></i></a>
-            <a href="https://www.youtube.com">&nbsp;&nbsp;<i id="sidebar-icons-items" class="fa fa-user" aria-hidden="true"><span
+            <a href="#">&nbsp;&nbsp;<i id="sidebar-icons-items" class="fa fa-user" aria-hidden="true"><span
                         class="menu-text-br">&nbsp;&nbsp;&nbsp;&nbsp;Persoonlijk<br>&nbsp;&nbsp;&nbsp;&nbsp;informatie</span></i></a>
-            <a href="https://www.youtube.com"><i id="sidebar-icons-items" class="fa fa-users" aria-hidden="true"><span
+            <a href="#"><i id="sidebar-icons-items" class="fa fa-users" aria-hidden="true"><span
                         class="menu-text-br">&nbsp;&nbsp;&nbsp;Gerelateerde<br>&nbsp;&nbsp;&nbsp;gebruikers</span></i></a>
-            <a href="https://www.youtube.com"><i id="sidebar-icons-items" class="fa fa-question-circle" aria-hidden="true"><span 
+            <a href="#"><i id="sidebar-icons-items" class="fa fa-question-circle" aria-hidden="true"><span 
                         class="menu-text"> &nbsp;&nbsp;&nbsp;&nbsp;Vragen</span></i></a>
-            <a href="https://www.youtube.com"><i id="sidebar-icons-items" class="fa fa-sign-out" aria-hidden="true"><span class="menu-text"> &nbsp;&nbsp;&nbsp;Uitloggen</span></i></a>
+            <a href="#"><i id="sidebar-icons-items" class="fa fa-sign-out" aria-hidden="true"><span class="menu-text"> &nbsp;&nbsp;&nbsp;Uitloggen</span></i></a>
         </nav>
         <div class="container-big" id="menu-hide">
             <button onclick="menu_hide_show('sidebar');toggle_sidebar_button('hide-menu')" id="hide-menu">Hide menu</button>
@@ -114,7 +114,7 @@
                                 id="thumbs-up-button-filled-1" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-1');toggle_thumbs_down_2comes('thumbs-down-button-filled-1');toggle_thumbs_down_1goes('thumbs-down-button-1')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-1');toggle_thumbs_down_2comes('thumbs-down-button-filled-1');toggle_thumbs_down_1goes('thumbs-down-button-1')"
                                 id="thumbs-down-button-1" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-1');toggle_thumbs_down_2goes('thumbs-down-button-filled-1')"
                                 id="thumbs-down-button-filled-1" class="fa fa-thumbs-down fa-2x"></button>
@@ -145,7 +145,7 @@
                                 id="thumbs-up-button-filled-2" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-2');toggle_thumbs_down_2comes('thumbs-down-button-filled-2');toggle_thumbs_down_1goes('thumbs-down-button-2')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-2');toggle_thumbs_down_2comes('thumbs-down-button-filled-2');toggle_thumbs_down_1goes('thumbs-down-button-2')"
                                 id="thumbs-down-button-2" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-2');toggle_thumbs_down_2goes('thumbs-down-button-filled-2')"
                                 id="thumbs-down-button-filled-2" class="fa fa-thumbs-down fa-2x"></button>
@@ -175,7 +175,7 @@
                                 id="thumbs-up-button-filled-3" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-3');toggle_thumbs_down_2comes('thumbs-down-button-filled-3');toggle_thumbs_down_1goes('thumbs-down-button-3')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-3');toggle_thumbs_down_2comes('thumbs-down-button-filled-3');toggle_thumbs_down_1goes('thumbs-down-button-3')"
                                 id="thumbs-down-button-3" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-3');toggle_thumbs_down_2goes('thumbs-down-button-filled-3')"
                                 id="thumbs-down-button-filled-3" class="fa fa-thumbs-down fa-2x"></button>
@@ -204,7 +204,7 @@
                                 id="thumbs-up-button-filled-4" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-4');toggle_thumbs_down_2comes('thumbs-down-button-filled-4');toggle_thumbs_down_1goes('thumbs-down-button-4')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-4');toggle_thumbs_down_2comes('thumbs-down-button-filled-4');toggle_thumbs_down_1goes('thumbs-down-button-4')"
                                 id="thumbs-down-button-4" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-4');toggle_thumbs_down_2goes('thumbs-down-button-filled-4')"
                                 id="thumbs-down-button-filled-4" class="fa fa-thumbs-down fa-2x"></button>
@@ -233,7 +233,7 @@
                                 id="thumbs-up-button-filled-5" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-5');toggle_thumbs_down_2comes('thumbs-down-button-filled-5');toggle_thumbs_down_1goes('thumbs-down-button-5')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-5');toggle_thumbs_down_2comes('thumbs-down-button-filled-5');toggle_thumbs_down_1goes('thumbs-down-button-5')"
                                 id="thumbs-down-button-5" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-5');toggle_thumbs_down_2goes('thumbs-down-button-filled-5')"
                                 id="thumbs-down-button-filled-5" class="fa fa-thumbs-down fa-2x"></button>
@@ -262,7 +262,7 @@
                                 id="thumbs-up-button-filled-6" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-6');toggle_thumbs_down_2comes('thumbs-down-button-filled-6');toggle_thumbs_down_1goes('thumbs-down-button-6')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-6');toggle_thumbs_down_2comes('thumbs-down-button-filled-6');toggle_thumbs_down_1goes('thumbs-down-button-6')"
                                 id="thumbs-down-button-6" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-6');toggle_thumbs_down_2goes('thumbs-down-button-filled-6')"
                                 id="thumbs-down-button-filled-6" class="fa fa-thumbs-down fa-2x"></button>
@@ -291,7 +291,7 @@
                                 id="thumbs-up-button-filled-7" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-7');toggle_thumbs_down_2comes('thumbs-down-button-filled-7');toggle_thumbs_down_1goes('thumbs-down-button-7')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-7');toggle_thumbs_down_2comes('thumbs-down-button-filled-7');toggle_thumbs_down_1goes('thumbs-down-button-7')"
                                 id="thumbs-down-button-7" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-7');toggle_thumbs_down_2goes('thumbs-down-button-filled-7')"
                                 id="thumbs-down-button-filled-7" class="fa fa-thumbs-down fa-2x"></button>
@@ -320,7 +320,7 @@
                                 id="thumbs-up-button-filled-8" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-8');toggle_thumbs_down_2comes('thumbs-down-button-filled-8');toggle_thumbs_down_1goes('thumbs-down-button-8')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-8');toggle_thumbs_down_2comes('thumbs-down-button-filled-8');toggle_thumbs_down_1goes('thumbs-down-button-8')"
                                 id="thumbs-down-button-8" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-8');toggle_thumbs_down_2goes('thumbs-down-button-filled-8')"
                                 id="thumbs-down-button-filled-8" class="fa fa-thumbs-down fa-2x"></button>
@@ -349,7 +349,7 @@
                                 id="thumbs-up-button-filled-9" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-9');toggle_thumbs_down_2comes('thumbs-down-button-filled-9');toggle_thumbs_down_1goes('thumbs-down-button-9')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-9');toggle_thumbs_down_2comes('thumbs-down-button-filled-9');toggle_thumbs_down_1goes('thumbs-down-button-9')"
                                 id="thumbs-down-button-9" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-9');toggle_thumbs_down_2goes('thumbs-down-button-filled-9')"
                                 id="thumbs-down-button-filled-9" class="fa fa-thumbs-down fa-2x"></button>
@@ -378,7 +378,7 @@
                                 id="thumbs-up-button-filled-10" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-10');toggle_thumbs_down_2comes('thumbs-down-button-filled-10');toggle_thumbs_down_1goes('thumbs-down-button-10')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-10');toggle_thumbs_down_2comes('thumbs-down-button-filled-10');toggle_thumbs_down_1goes('thumbs-down-button-10')"
                                 id="thumbs-down-button-10" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-10');toggle_thumbs_down_2goes('thumbs-down-button-filled-10')"
                                 id="thumbs-down-button-filled-10" class="fa fa-thumbs-down fa-2x"></button>
@@ -407,7 +407,7 @@
                                 id="thumbs-up-button-filled-11" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-11');toggle_thumbs_down_2comes('thumbs-down-button-filled-11');toggle_thumbs_down_1goes('thumbs-down-button-11')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-11');toggle_thumbs_down_2comes('thumbs-down-button-filled-11');toggle_thumbs_down_1goes('thumbs-down-button-11')"
                                 id="thumbs-down-button-11" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-11');toggle_thumbs_down_2goes('thumbs-down-button-filled-11')"
                                 id="thumbs-down-button-filled-11" class="fa fa-thumbs-down fa-2x"></button>
@@ -436,7 +436,7 @@
                                 id="thumbs-up-button-filled-12" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-12');toggle_thumbs_down_2comes('thumbs-down-button-filled-12');toggle_thumbs_down_1goes('thumbs-down-button-12')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-12');toggle_thumbs_down_2comes('thumbs-down-button-filled-12');toggle_thumbs_down_1goes('thumbs-down-button-12')"
                                 id="thumbs-down-button-12" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-12');toggle_thumbs_down_2goes('thumbs-down-button-filled-12')"
                                 id="thumbs-down-button-filled-12" class="fa fa-thumbs-down fa-2x"></button>
@@ -465,7 +465,7 @@
                                 id="thumbs-up-button-filled-13" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-13');toggle_thumbs_down_2comes('thumbs-down-button-filled-13');toggle_thumbs_down_1goes('thumbs-down-button-13')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-13');toggle_thumbs_down_2comes('thumbs-down-button-filled-13');toggle_thumbs_down_1goes('thumbs-down-button-13')"
                                 id="thumbs-down-button-13" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-13');toggle_thumbs_down_2goes('thumbs-down-button-filled-13')"
                                 id="thumbs-down-button-filled-13" class="fa fa-thumbs-down fa-2x"></button>
@@ -494,7 +494,7 @@
                                 id="thumbs-up-button-filled-14" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-14');toggle_thumbs_down_2comes('thumbs-down-button-filled-14');toggle_thumbs_down_1goes('thumbs-down-button-14')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-14');toggle_thumbs_down_2comes('thumbs-down-button-filled-14');toggle_thumbs_down_1goes('thumbs-down-button-14')"
                                 id="thumbs-down-button-14" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-14');toggle_thumbs_down_2goes('thumbs-down-button-filled-14')"
                                 id="thumbs-down-button-filled-14" class="fa fa-thumbs-down fa-2x"></button>
@@ -523,7 +523,7 @@
                                 id="thumbs-up-button-filled-15" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-15');toggle_thumbs_down_2comes('thumbs-down-button-filled-15');toggle_thumbs_down_1goes('thumbs-down-button-15')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-15');toggle_thumbs_down_2comes('thumbs-down-button-filled-15');toggle_thumbs_down_1goes('thumbs-down-button-15')"
                                 id="thumbs-down-button-15" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-15');toggle_thumbs_down_2goes('thumbs-down-button-filled-15')"
                                 id="thumbs-down-button-filled-15" class="fa fa-thumbs-down fa-2x"></button>
@@ -552,7 +552,7 @@
                                 id="thumbs-up-button-filled-16" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-16');toggle_thumbs_down_2comes('thumbs-down-button-filled-16');toggle_thumbs_down_1goes('thumbs-down-button-16')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-16');toggle_thumbs_down_2comes('thumbs-down-button-filled-16');toggle_thumbs_down_1goes('thumbs-down-button-16')"
                                 id="thumbs-down-button-16" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-16');toggle_thumbs_down_2goes('thumbs-down-button-filled-16')"
                                 id="thumbs-down-button-filled-16" class="fa fa-thumbs-down fa-2x"></button>
@@ -581,7 +581,7 @@
                                 id="thumbs-up-button-filled-17" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-17');toggle_thumbs_down_2comes('thumbs-down-button-filled-17');toggle_thumbs_down_1goes('thumbs-down-button-17')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-17');toggle_thumbs_down_2comes('thumbs-down-button-filled-17');toggle_thumbs_down_1goes('thumbs-down-button-17')"
                                 id="thumbs-down-button-17" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-17');toggle_thumbs_down_2goes('thumbs-down-button-filled-17')"
                                 id="thumbs-down-button-filled-17" class="fa fa-thumbs-down fa-2x"></button>
@@ -610,7 +610,7 @@
                                 id="thumbs-up-button-filled-18" class="fa fa-thumbs-up fa-2x"></button>
 
                             <button
-                                onclick="book_individual('container-gone-18');toggle_thumbs_down_2comes('thumbs-down-button-filled-18');toggle_thumbs_down_1goes('thumbs-down-button-18')"
+                                onclick="setTimeout(book_individual, 100, 'container-gone-18');toggle_thumbs_down_2comes('thumbs-down-button-filled-18');toggle_thumbs_down_1goes('thumbs-down-button-18')"
                                 id="thumbs-down-button-18" class="fa fa-thumbs-o-down fa-2x"></button><button
                                 onclick="toggle_thumbs_down_1comes('thumbs-down-button-18');toggle_thumbs_down_2goes('thumbs-down-button-filled-18')"
                                 id="thumbs-down-button-filled-18" class="fa fa-thumbs-down fa-2x"></button>
