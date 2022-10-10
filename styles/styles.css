@@ -530,15 +530,11 @@ img:focus {
 
 .text, .text2 {
     width: 105px;
-    height: 81%;
+    height: 96%;
     top: 2%;
     position: relative;
     overflow: auto;
     overflow-x: hidden;
-}
-
-.text2 {
-    height: 96%;
 }
 
 ::-webkit-scrollbar {
@@ -556,8 +552,8 @@ img:focus {
 }
 
 .text-icons {
-    position: relative;
-    top: 3%;
+    position: absolute;
+    top: 108%;
     width: 100px;
     height: 15%;
     display: flex;
