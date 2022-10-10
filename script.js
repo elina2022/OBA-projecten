@@ -1,6 +1,6 @@
 function toggle_visibility(id) {
   var e = document.getElementById(id);
-  e.style.display = ((e.style.display != 'none') ? 'none' : 'flex');
+  e.style.display = ((e.style.display != 'none') ? 'none' : 'grid');
 }
 
 
@@ -40,6 +40,9 @@ function toggle_style(id) {
 }
 
 
+
+
+
 function toggle_thumbs_up_2comes(id) {
   var e = document.getElementById(id);
   e.style.display = ((e.style.display != 'block') ? 'block' : 'none');
@@ -59,6 +62,9 @@ function toggle_thumbs_up_2goes(id) {
   var e = document.getElementById(id);
   e.style.display = ((e.style.display != 'none') ? 'none' : 'block');
 }
+
+
+
 
 
 function toggle_thumbs_down_2comes(id) {
@@ -81,6 +87,18 @@ function toggle_thumbs_down_2goes(id) {
   e.style.display = ((e.style.display != 'none') ? 'none' : 'block');
 }
 
+function book_individual(id) {
+  var e = document.getElementById(id);
+  e.style.display = ((e.style.display != 'none') ? 'none' : 'none');
+  e.style.transition = ((e.style.transition != '0.5s ease-in-out') ? '0.5s ease-in-out' : '0.5s ease-in-out');
+}
+
+// function book_individual_display(id) {
+//   var e = document.getElementById(id);
+//   e.style.display = ((e.style.display != 'none') ? 'none' : 'flex');
+// }
+
+
 
 function toggle_opacity1_1(id) {
   var e = document.getElementById(id);
@@ -101,12 +119,6 @@ function toggle_opacity1_3(id) {
 function toggle_opacity1_4(id) {
   var e = document.getElementById(id);
   e.style.opacity = ((e.style.opacity != '0.3') ? '0.3' : '1');
-}
-
-
-function book_individual(id) {
-  var e = document.getElementById(id);
-  e.style.display = ((e.style.display != 'none') ? 'none' : 'flex');
 }
 
 

@@ -1,0 +1,23 @@
+#d1{
+    width: 50vw;
+    height: 50vh;
+    background: blue;
+    grid-area: d1;
+
+}
+
+#d2{
+    width: 5vw;
+    height: 5vh;
+    background: rgb(7, 146, 10);
+    grid-area: d2;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    grid-template-rows: 1fr 10fr;
+    grid-template-areas: 
+    "d1 d2"
+    "d1 d1";
+}
