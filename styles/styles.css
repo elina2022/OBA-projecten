@@ -558,6 +558,7 @@ img:focus {
     position: relative;
     text-shadow: var(--small-text);
     transition: 0.1s ease-in-out;
+    color: black;
 }
 
 .fa-thumbs-o-up,
