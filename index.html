@@ -49,852 +49,55 @@
                 </svg>
             </a>
             <a href="#"><i id="sidebar-icons-items" class="fa fa-home" aria-hidden="true"><span
-                        class="menu-text"> &nbsp;&nbsp;&nbsp;Home</span></i></a>
+                        class="menu-text">
+                    &nbsp;&nbsp;&nbsp;Home</span></i></a>
             <a href="#"><i id="sidebar-icons-items" class="fa fa-book" aria-hidden="true"><span
                         class="menu-text-br">&nbsp;&nbsp;&nbsp;&nbsp;Uitleningen<br>&nbsp;&nbsp;&nbsp;&nbsp;Verlengen</span></i></a>
-            <a href="#"><i id="sidebar-icons-items" class="fa fa-history" aria-hidden="true"><span
-                        class="menu-text"> &nbsp;&nbsp;&nbsp;&nbsp;Geschiedenis</span></i></a>
-            <a href="#"><i id="sidebar-icons-items" class="fa fa-list" aria-hidden="true"><span
-                        class="menu-text"> &nbsp;&nbsp;&nbsp;Mijn lijst</span></i></a>
+            <a href="#"><i id="sidebar-icons-items" class="fa fa-history" aria-hidden="true"><span class="menu-text">
+                        &nbsp;&nbsp;&nbsp;&nbsp;Geschiedenis</span></i></a>
+            <a href="#"><i id="sidebar-icons-items" class="fa fa-list" aria-hidden="true"><span class="menu-text">
+                        &nbsp;&nbsp;&nbsp;Mijn lijst</span></i></a>
             <a href="#"><i id="sidebar-icons-items-current" class="fa fa-thumbs-up" aria-hidden="true"><span
                         class="menu-text-current">&nbsp;&nbsp;&nbsp;&nbsp;Aanbevelingen</span></i></a>
-            <a href="#"><i id="sidebar-icons-items" class="fa fa-check" aria-hidden="true"><span
-                        class="menu-text"> &nbsp;&nbsp;&nbsp;Reservaties</span></i></a>
-            <a href="#"><i id="sidebar-icons-items" class="fa fa-shopping-cart" aria-hidden="true"><span 
+            <a href="#"><i id="sidebar-icons-items" class="fa fa-check" aria-hidden="true"><span class="menu-text">
+                        &nbsp;&nbsp;&nbsp;Reservaties</span></i></a>
+            <a href="#"><i id="sidebar-icons-items" class="fa fa-shopping-cart" aria-hidden="true"><span
                         class="menu-text"> &nbsp;&nbsp;&nbsp;Betalingen</span></i></a>
             <a href="#">&nbsp;&nbsp;<i id="sidebar-icons-items" class="fa fa-user" aria-hidden="true"><span
                         class="menu-text-br">&nbsp;&nbsp;&nbsp;&nbsp;Persoonlijk<br>&nbsp;&nbsp;&nbsp;&nbsp;informatie</span></i></a>
             <a href="#"><i id="sidebar-icons-items" class="fa fa-users" aria-hidden="true"><span
                         class="menu-text-br">&nbsp;&nbsp;&nbsp;Gerelateerde<br>&nbsp;&nbsp;&nbsp;gebruikers</span></i></a>
-            <a href="#"><i id="sidebar-icons-items" class="fa fa-question-circle" aria-hidden="true"><span 
+            <a href="#"><i id="sidebar-icons-items" class="fa fa-question-circle" aria-hidden="true"><span
                         class="menu-text"> &nbsp;&nbsp;&nbsp;&nbsp;Vragen</span></i></a>
-            <a href="#"><i id="sidebar-icons-items" class="fa fa-sign-out" aria-hidden="true"><span class="menu-text"> &nbsp;&nbsp;&nbsp;Uitloggen</span></i></a>
+            <a href="#"><i id="sidebar-icons-items" class="fa fa-sign-out" aria-hidden="true"><span class="menu-text">
+                        &nbsp;&nbsp;&nbsp;Uitloggen</span></i></a>
         </nav>
-        <div class="container-big" id="menu-hide">
-            <button onclick="menu_hide_show('sidebar');toggle_sidebar_button('hide-menu')" id="hide-menu">Hide menu</button>
-            <h1 id="h-1">Aanbevelingen<span id="target2"> afstemmen</span></h1>
+        <main class="container-big" id="menu-hide">
+            <button onclick="menu_hide_show('sidebar');toggle_sidebar_button('hide-menu')" id="hide-menu">Hide
+                menu</button>
+            <header id="h-1">Aanbevelingen<span id="target2"> afstemmen</span></header>
 
-            <h5 id="target-h5-first">Klik op de <span id="caption-symbols-up"
+            <h2 id="target-h2-first">Klik op de <span id="caption-symbols-up"
                     class="fa fa-thumbs-o-up fa-lg"></span><span id="caption-symbols-down"
-                    class="fa fa-thumbs-o-down fa-lg"></span> voor meer of minder van dit type aanbevelingen
-            </h5>
+                    class="fa fa-thumbs-o-down fa-lg"></span> voor meer of minder <br id="h2media"> van dit type aanbevelingen
+            </h2>
 
-            <h5 id="target-h5-second">Klik op <span id="caption-symbol-cancel"
-                    class="material-symbols-outlined">cancel</span> om aanbevelingen voor desbetreffende titels uit te
+            <h2 id="target-h2-second">Klik op <span id="caption-symbol-cancel"
+                    class="material-symbols-outlined">cancel</span> om aanbevelingen voor <br id="h2media"> desbetreffende titels uit te
                 zetten
-            </h5>
+            </h2>
 
-            <button onclick="menu('drop-down');opacity_for_menu('overlap-for-menu');toggle_style('beschikbaar')"
+            <button onclick="menu('drop-down');toggle_style('beschikbaar')"
                 id="beschikbaar" class="nu-beschikbaar">Nu beschikbaar
             </button>
 
             <button
-                onclick="toggle_style_gone('beschikbaar');menu_gone('drop-down');opacity_for_menu_gone('overlap-for-menu');toggle_visibility('target');toggle_h1('target2'); toggle_text('stem-af');toggle_style('stem-af');toggle_h5_1('target-h5-first');toggle_h5_2('target-h5-second')"
-                id="stem-af" class="button1-state1">Stem voorgaande uitleningen af
+                onclick="toggle_sort('gesorteerd-items');toggle_style_gone('beschikbaar');menu_gone('drop-down');toggle_visibility('target');toggle_h1('target2'); toggle_text('stem-af');toggle_style('stem-af');toggle_h2_1('target-h2-first');toggle_h2_2('target-h2-second')"
+                id="stem-af" class="button1-state1">Stem<span id="button2media"> voorgaande uitleningen</span> af
             </button>
-
-            <main id="target" class="container-books">
-
-                <div id="container-gone-1" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">All the bright places</div><img src="assets/Book1.jfif"
-                            alt="All the bright places">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">Violet en Finch ontmoeten elkaar boven op de klokkentoren van school waar
-                            ze
-                            allebei overwegen ze er vanaf te springen.</div>
-                        <div class="text-icons"><button style="color: black;" onclick="toggle_list('list-icon-1')" id="list-icon-1"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-1');toggle_thumbs_up_1goes('thumbs-up-button-1')"
-                                id="thumbs-up-button-1" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-1');toggle_thumbs_up_2goes('thumbs-up-button-filled-1')"
-                                id="thumbs-up-button-filled-1" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-1');toggle_thumbs_down_2comes('thumbs-down-button-filled-1');toggle_thumbs_down_1goes('thumbs-down-button-1')"
-                                id="thumbs-down-button-1" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-1');toggle_thumbs_down_2goes('thumbs-down-button-filled-1')"
-                                id="thumbs-down-button-filled-1" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Jenniver Niven</div>
-                </div>
-
-
-
-                <div id="container-gone-2" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">How to fall in love</div><img src="assets/book2.jfif"
-                            alt="How to fall in love">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">Een jonge vrouw krijgt twee weken de tijd om een aantrekkelijke jongeman
-                            zover
-                            te krijgen dat hij niet opnieuw een zelfmoordpoging doet.
-                        </div>
-                        <div class="text-icons"><button onclick="toggle_list('list-icon-2')" id="list-icon-2"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-2');toggle_thumbs_up_1goes('thumbs-up-button-2')"
-                                id="thumbs-up-button-2" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-2');toggle_thumbs_up_2goes('thumbs-up-button-filled-2')"
-                                id="thumbs-up-button-filled-2" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-2');toggle_thumbs_down_2comes('thumbs-down-button-filled-2');toggle_thumbs_down_1goes('thumbs-down-button-2')"
-                                id="thumbs-down-button-2" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-2');toggle_thumbs_down_2goes('thumbs-down-button-filled-2')"
-                                id="thumbs-down-button-filled-2" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Cecelia Ahern</div>
-                </div>
-
-
-
-                <div id="container-gone-3" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">One of us is lying</div><img src="assets/book3.jfif"
-                            alt="One of us is lying">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">Vijf leerlingen moeten voor straf nablijven. Een van hen, zal het
-                            klaslokaal
-                            echter nooit verlaten... Wie heeft het gedaan?</div>
-                        <div class="text-icons"><button onclick="toggle_list('list-icon-3')" id="list-icon-3"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-3');toggle_thumbs_up_1goes('thumbs-up-button-3')"
-                                id="thumbs-up-button-3" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-3');toggle_thumbs_up_2goes('thumbs-up-button-filled-3')"
-                                id="thumbs-up-button-filled-3" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-3');toggle_thumbs_down_2comes('thumbs-down-button-filled-3');toggle_thumbs_down_1goes('thumbs-down-button-3')"
-                                id="thumbs-down-button-3" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-3');toggle_thumbs_down_2goes('thumbs-down-button-filled-3')"
-                                id="thumbs-down-button-filled-3" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Karen M. McManus</div>
-                </div>
-
-
-
-                <div id="container-gone-4" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">Evelyn Hugo</div><img src="assets/book4.jfif" alt="bookname">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">De Amerikaanse filmdiva Evelyn Hugo heeft na jaren mediastilte besloten haar levensverhaal toe te vertrouwen aan de onbekende journalist Monique Grant.</div>
-                        <div class="text-icons"><button onclick="toggle_list('list-icon-4')" id="list-icon-4"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-4');toggle_thumbs_up_1goes('thumbs-up-button-4')"
-                                id="thumbs-up-button-4" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-4');toggle_thumbs_up_2goes('thumbs-up-button-filled-4')"
-                                id="thumbs-up-button-filled-4" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-4');toggle_thumbs_down_2comes('thumbs-down-button-filled-4');toggle_thumbs_down_1goes('thumbs-down-button-4')"
-                                id="thumbs-down-button-4" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-4');toggle_thumbs_down_2goes('thumbs-down-button-filled-4')"
-                                id="thumbs-down-button-filled-4" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Taylor Jenkins Reid</div>
-                </div>
-
-
-
-                <div id="container-gone-5" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">In een ander leven</div><img src="assets/book5.jfif" alt="bookname">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">Op haar terugkomstfeestje in Los Angeles kiest een 29-jarige vrouw of ze met haar vriendin en gastvrouw mee naar huis gaat of met haar oude jeugdliefde, ze doet beide.</div>
-                        <div class="text-icons"><button onclick="toggle_list('list-icon-5')" id="list-icon-5"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-5');toggle_thumbs_up_1goes('thumbs-up-button-5')"
-                                id="thumbs-up-button-5" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-5');toggle_thumbs_up_2goes('thumbs-up-button-filled-5')"
-                                id="thumbs-up-button-filled-5" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-5');toggle_thumbs_down_2comes('thumbs-down-button-filled-5');toggle_thumbs_down_1goes('thumbs-down-button-5')"
-                                id="thumbs-down-button-5" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-5');toggle_thumbs_down_2goes('thumbs-down-button-filled-5')"
-                                id="thumbs-down-button-filled-5" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Taylor Jenkins Reid</div>
-                </div>
-
-
-
-                <div id="container-gone-6" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">Daisy Jones & the Six</div><img src="assets/book6.jfif" alt="bookname">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">Het wel en wee van een Amerikaanse popgroep vanaf de start, hun grote successen in de jaren zeventig en hun einde na het vertrek van de zangeres.
-                        </div>
-                        <div class="text-icons"><button onclick="toggle_list('list-icon-6')" id="list-icon-6"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-6');toggle_thumbs_up_1goes('thumbs-up-button-6')"
-                                id="thumbs-up-button-6" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-6');toggle_thumbs_up_2goes('thumbs-up-button-filled-6')"
-                                id="thumbs-up-button-filled-6" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-6');toggle_thumbs_down_2comes('thumbs-down-button-filled-6');toggle_thumbs_down_1goes('thumbs-down-button-6')"
-                                id="thumbs-down-button-6" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-6');toggle_thumbs_down_2goes('thumbs-down-button-filled-6')"
-                                id="thumbs-down-button-filled-6" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Taylor Jenkins Reid</div>
-                </div>
-
-
-
-                <div id="container-gone-7" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">Sprong in het diepe</div><img src="assets/book7.jfif" alt="bookname">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">Wanneer een naieve jonge vrouw haar baan verliest, vertrekt zij naar een Duits golf-resort waar zij de man van haar dromen ontmoet. Maar is hij wel te vertrouwen?
-                        </div>
-                        <div class="text-icons"><button onclick="toggle_list('list-icon-7')" id="list-icon-7"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-7');toggle_thumbs_up_1goes('thumbs-up-button-7')"
-                                id="thumbs-up-button-7" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-7');toggle_thumbs_up_2goes('thumbs-up-button-filled-7')"
-                                id="thumbs-up-button-filled-7" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-7');toggle_thumbs_down_2comes('thumbs-down-button-filled-7');toggle_thumbs_down_1goes('thumbs-down-button-7')"
-                                id="thumbs-down-button-7" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-7');toggle_thumbs_down_2goes('thumbs-down-button-filled-7')"
-                                id="thumbs-down-button-filled-7" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Tamara Haagmans</div>
-                </div>
-
-
-
-                <div id="container-gone-8" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">Normal people</div><img src="assets/book8.jfif" alt="bookname">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">De relatie van een Ierse jongen met zijn klasgenote loopt anders dan zij had gehoopt omdat hij niet 100% voor haar kiest.
-                        </div>
-                        <div class="text-icons"><button onclick="toggle_list('list-icon-8')" id="list-icon-8"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-8');toggle_thumbs_up_1goes('thumbs-up-button-8')"
-                                id="thumbs-up-button-8" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-8');toggle_thumbs_up_2goes('thumbs-up-button-filled-8')"
-                                id="thumbs-up-button-filled-8" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-8');toggle_thumbs_down_2comes('thumbs-down-button-filled-8');toggle_thumbs_down_1goes('thumbs-down-button-8')"
-                                id="thumbs-down-button-8" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-8');toggle_thumbs_down_2goes('thumbs-down-button-filled-8')"
-                                id="thumbs-down-button-filled-8" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Sally Rooney</div>
-                </div>
-
-
-
-                <div id="container-gone-9" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">The song of Achilles</div><img src="assets/book9.jfif" alt="bookname">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">De Griekse mythologische held Achilles vat een bijzondere vriendschap op voor een jongeling die door zijn vader op 12-jarige leeftijd is opgenomen na door zijn eigen vader te zijn verbannen.
-                        </div>
-                        <div class="text-icons"><button onclick="toggle_list('list-icon-9')" id="list-icon-9"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-9');toggle_thumbs_up_1goes('thumbs-up-button-9')"
-                                id="thumbs-up-button-9" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-9');toggle_thumbs_up_2goes('thumbs-up-button-filled-9')"
-                                id="thumbs-up-button-filled-9" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-9');toggle_thumbs_down_2comes('thumbs-down-button-filled-9');toggle_thumbs_down_1goes('thumbs-down-button-9')"
-                                id="thumbs-down-button-9" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-9');toggle_thumbs_down_2goes('thumbs-down-button-filled-9')"
-                                id="thumbs-down-button-filled-9" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Madeleine Miller</div>
-                </div>
-
-
-
-                <div id="container-gone-10" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">Een daad van liefde</div><img src="assets/book10.jfif" alt="bookname">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">Frankrijk, 1943. Nadat ze het door oorlog verwoeste Polen moesten ontvluchten, vinden Sara en haar ouders onderdak in een prachtig, maar vervallen huis in de Franse Alpen. </div>
-                        <div class="text-icons"><button onclick="toggle_list('list-icon-10')" id="list-icon-10"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-10');toggle_thumbs_up_1goes('thumbs-up-button-10')"
-                                id="thumbs-up-button-10" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-10');toggle_thumbs_up_2goes('thumbs-up-button-filled-10')"
-                                id="thumbs-up-button-filled-10" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-10');toggle_thumbs_down_2comes('thumbs-down-button-filled-10');toggle_thumbs_down_1goes('thumbs-down-button-10')"
-                                id="thumbs-down-button-10" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-10');toggle_thumbs_down_2goes('thumbs-down-button-filled-10')"
-                                id="thumbs-down-button-filled-10" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Carol Drinkwater</div>
-                </div>
-
-
-
-                <div id="container-gone-11" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">Wat stilte wil</div><img src="assets/book11.jfif" alt="bookname">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">Zingen is Anna’s grote geluk. Zij heeft de stem, het talent en de ambitie, maar een carrière als zangeres is voor een meisje uit haar milieu eind negentiende eeuw ondenkbaar.</div>
-                        <div class="text-icons"><button onclick="toggle_list('list-icon-11')" id="list-icon-11"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-11');toggle_thumbs_up_1goes('thumbs-up-button-11')"
-                                id="thumbs-up-button-11" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-11');toggle_thumbs_up_2goes('thumbs-up-button-filled-11')"
-                                id="thumbs-up-button-filled-11" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-11');toggle_thumbs_down_2comes('thumbs-down-button-filled-11');toggle_thumbs_down_1goes('thumbs-down-button-11')"
-                                id="thumbs-down-button-11" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-11');toggle_thumbs_down_2goes('thumbs-down-button-filled-11')"
-                                id="thumbs-down-button-filled-11" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Arthur Japin</div>
-                </div>
-
-
-
-                <div id="container-gone-12" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">Lichtjaren beter</div><img src="assets/book12.jfif" alt="bookname">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">Een verhaal over jezelf heruitvinden, inspiratie, over levenslust, vriendschap, en vooral over muziek.</div>
-                        <div class="text-icons"><button onclick="toggle_list('list-icon-12')" id="list-icon-12"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-12');toggle_thumbs_up_1goes('thumbs-up-button-12')"
-                                id="thumbs-up-button-12" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-12');toggle_thumbs_up_2goes('thumbs-up-button-filled-12')"
-                                id="thumbs-up-button-filled-12" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-12');toggle_thumbs_down_2comes('thumbs-down-button-filled-12');toggle_thumbs_down_1goes('thumbs-down-button-12')"
-                                id="thumbs-down-button-12" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-12');toggle_thumbs_down_2goes('thumbs-down-button-filled-12')"
-                                id="thumbs-down-button-filled-12" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Tim Knol</div>
-                </div>
-
-
-
-                <div id="container-gone-13" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">De prooi</div><img src="assets/book13.jfif" alt="bookname">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">Tijdens de koudste dagen van het jaar is een reddingsteam op de afgelegen hoogvlakten van IJsland op zoek naar een groep vermiste mensen.</div>
-                        <div class="text-icons"><button onclick="toggle_list('list-icon-13')" id="list-icon-13"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-13');toggle_thumbs_up_1goes('thumbs-up-button-13')"
-                                id="thumbs-up-button-13" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-13');toggle_thumbs_up_2goes('thumbs-up-button-filled-13')"
-                                id="thumbs-up-button-filled-13" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-13');toggle_thumbs_down_2comes('thumbs-down-button-filled-13');toggle_thumbs_down_1goes('thumbs-down-button-13')"
-                                id="thumbs-down-button-13" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-13');toggle_thumbs_down_2goes('thumbs-down-button-filled-13')"
-                                id="thumbs-down-button-filled-13" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Yrsa Sigurðardóttir</div>
-                </div>
-
-
-
-                <div id="container-gone-14" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">Bore-out</div><img src="assets/book14.jfif" alt="bookname">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">Praktische adviezen en oefeningen voor zowel medewerkers als leidinggevenden voor de aanpak van bore -out, chronische verveling in werksituaties door het ontbreken van uitdagingen.
-                        </div>
-                        <div class="text-icons"><button onclick="toggle_list('list-icon-14')" id="list-icon-14"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-14');toggle_thumbs_up_1goes('thumbs-up-button-14')"
-                                id="thumbs-up-button-14" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-14');toggle_thumbs_up_2goes('thumbs-up-button-filled-14')"
-                                id="thumbs-up-button-filled-14" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-14');toggle_thumbs_down_2comes('thumbs-down-button-filled-14');toggle_thumbs_down_1goes('thumbs-down-button-14')"
-                                id="thumbs-down-button-14" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-14');toggle_thumbs_down_2goes('thumbs-down-button-filled-14')"
-                                id="thumbs-down-button-filled-14" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Marjo Crombach</div>
-                </div>
-
-
-
-                <div id="container-gone-15" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">Operatie Raaf</div><img src="assets/book15.jfif" alt="bookname">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">n deze spannende reconstructie doen Geert-Jan en Carry Knoops verslag van de juridische strijd die zij jarenlang zowel achter de schermen als in de rechtszaal voerden tegen de Nederlandse overheid.</div>
-                        <div class="text-icons"><button onclick="toggle_list('list-icon-15')" id="list-icon-15"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-15');toggle_thumbs_up_1goes('thumbs-up-button-15')"
-                                id="thumbs-up-button-15" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-15');toggle_thumbs_up_2goes('thumbs-up-button-filled-15')"
-                                id="thumbs-up-button-filled-15" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-15');toggle_thumbs_down_2comes('thumbs-down-button-filled-15');toggle_thumbs_down_1goes('thumbs-down-button-15')"
-                                id="thumbs-down-button-15" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-15');toggle_thumbs_down_2goes('thumbs-down-button-filled-15')"
-                                id="thumbs-down-button-filled-15" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Geert-Jan en Garry Knoops</div>
-                </div>
-
-
-
-                <div id="container-gone-16" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">Recitatief</div><img src="assets/book16.jfif" alt="bookname">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">An Anthology of African American Women, an anthology edited by Amiri Baraka and Amina Baraka, and is the only short story written by the acclaimed novelist.</div>
-                        <div class="text-icons"><button onclick="toggle_list('list-icon-16')" id="list-icon-16"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-16');toggle_thumbs_up_1goes('thumbs-up-button-16')"
-                                id="thumbs-up-button-16" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-16');toggle_thumbs_up_2goes('thumbs-up-button-filled-16')"
-                                id="thumbs-up-button-filled-16" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-16');toggle_thumbs_down_2comes('thumbs-down-button-filled-16');toggle_thumbs_down_1goes('thumbs-down-button-16')"
-                                id="thumbs-down-button-16" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-16');toggle_thumbs_down_2goes('thumbs-down-button-filled-16')"
-                                id="thumbs-down-button-filled-16" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Toni Morrison</div>
-                </div>
-
-
-
-                <div id="container-gone-17" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">Terug naar Insulinde</div><img src="assets/book17.jfif" alt="bookname">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">Een indringende roman over familie, loyaliteit, liefde en hoop in tijden van oorlog.</div>
-                        <div class="text-icons"><button onclick="toggle_list('list-icon-17')" id="list-icon-17"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-17');toggle_thumbs_up_1goes('thumbs-up-button-17')"
-                                id="thumbs-up-button-17" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-17');toggle_thumbs_up_2goes('thumbs-up-button-filled-17')"
-                                id="thumbs-up-button-filled-17" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-17');toggle_thumbs_down_2comes('thumbs-down-button-filled-17');toggle_thumbs_down_1goes('thumbs-down-button-17')"
-                                id="thumbs-down-button-17" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-17');toggle_thumbs_down_2goes('thumbs-down-button-filled-17')"
-                                id="thumbs-down-button-filled-17" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Elle van Rijn</div>
-                </div>
-
-
-
-                <div id="container-gone-18" class="container-book-individual"><a href="https://www.youtube.nl/"
-                        target="_blank">
-                        <div class="book-name">Componist Foltýn</div><img src="assets/book18.jfif" alt="bookname">
-                    </a>
-                    <div class="book-text">
-                        <div class="text">Diverse personages geven elk hun kijk op Bedrich Foltýn, een mislukt componist die zichzelf geniaal vindt.
-                        </div>
-                        <div class="text-icons"><button onclick="toggle_list('list-icon-18')" id="list-icon-18"
-                                class="material-symbols-outlined">format_list_bulleted</button>
-
-                            <button
-                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-18');toggle_thumbs_up_1goes('thumbs-up-button-18')"
-                                id="thumbs-up-button-18" class="fa fa-thumbs-o-up fa-2x"></button><button
-                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-18');toggle_thumbs_up_2goes('thumbs-up-button-filled-18')"
-                                id="thumbs-up-button-filled-18" class="fa fa-thumbs-up fa-2x"></button>
-
-                            <button
-                                onclick="setTimeout(book_individual, 100, 'container-gone-18');toggle_thumbs_down_2comes('thumbs-down-button-filled-18');toggle_thumbs_down_1goes('thumbs-down-button-18')"
-                                id="thumbs-down-button-18" class="fa fa-thumbs-o-down fa-2x"></button><button
-                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-18');toggle_thumbs_down_2goes('thumbs-down-button-filled-18')"
-                                id="thumbs-down-button-filled-18" class="fa fa-thumbs-down fa-2x"></button>
-                        </div>
-                    </div>
-                    <div class="auteur">Karel Čapek</div>
-                </div>
-            </main>
-
-
-
-
-            <main class="container-books2">
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div class="book-name" id="cancel-opacity1_1">Vind ik leuk?!</div><img
-                            id="cancel-opacity1_2" src="assets/boek1.jfif" alt="bookname">
-                    </a>
-                    <div class="book-text" id="cancel-opacity1_3">
-                        <div class="text2">Tori heeft een relatie waarin ze niet gelukkig is en wordt continu geconfronteerd met leeftijdsgenoten die gaan trouwen of kinderen krijgen, waardoor ze gaat twijfelen aan de kwaliteit van haar eigen leven.</div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity1_1');toggle_opacity1_2('cancel-opacity1_2');toggle_opacity1_3('cancel-opacity1_3');toggle_opacity1_4('cancel-opacity1_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div class="auteur" id="cancel-opacity1_4">Holly Bourne</div>
-                </div>
-
-
-
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div class="book-name" id="cancel-opacity2_1">England, England</div><img
-                            id="cancel-opacity2_2" src="assets/boek2.jfif" alt="How to fall in love">
-                    </a>
-                    <div class="book-text" id="cancel-opacity2_3">
-                        <div class="text2">Kort na het jaar 2000 wordt het eiland Wight omgetoverd tot een gigantisch Engels Madurodam.
-                        </div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity2_1');toggle_opacity1_2('cancel-opacity2_2');toggle_opacity1_3('cancel-opacity2_3');toggle_opacity1_4('cancel-opacity2_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div class="auteur" id="cancel-opacity2_4">Julian Barnes</div>
-                </div>
-
-
-
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div id="cancel-opacity3_1" class="book-name">Het boek</div><img
-                            id="cancel-opacity3_2" src="assets/boek3.jfif" alt="One of us is lying">
-                    </a>
-                    <div id="cancel-opacity3_3" class="book-text">
-                        <div class="text2">Uit de lucht dwarrelen allemaal boeken naar beneden. Olifant vangt er een op en kan niet meer stoppen met lezen. De panters vluchten weg als er nog meer boeken uit de lucht vallen, maar de pinguins lijken erg geinteresseerd.</div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity3_1');toggle_opacity1_2('cancel-opacity3_2');toggle_opacity1_3('cancel-opacity3_3');toggle_opacity1_4('cancel-opacity3_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div id="cancel-opacity3_4" class="auteur">Marije Tolman & Ronald Tolman</div>
-                </div>
-
-
-
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div id="cancel-opacity4_1" class="book-name">Ouders!?!</div><img id="cancel-opacity4_2"
-                            src="assets/boek4.jfif" alt="bookname">
-                    </a>
-                    <div id="cancel-opacity4_3" class="book-text">
-                        <div class="text2">Sterre heeft haar vader sinds de scheiding van haar ouders al bijna twee jaar niet meer gezien. Als hij haar komt ophalen van een vakantiekamp, komen alle vervelende herinneringen aan haar ruziënde ouders weer naar boven.</div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity4_1');toggle_opacity1_2('cancel-opacity4_2');toggle_opacity1_3('cancel-opacity4_3');toggle_opacity1_4('cancel-opacity4_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div id="cancel-opacity4_4" class="auteur">Annemarie Bon</div>
-                </div>
-
-
-
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div id="cancel-opacity5_1" class="book-name">De oorlogsbibliotheek </div><img id="cancel-opacity5_2"
-                            src="assets/boek5.jfif" alt="bookname">
-                    </a>
-                    <div id="cancel-opacity5_3" class="book-text">
-                        <div class="text2">Twee vrouwen. Eén geheim. Een waarheid om voor te vechten.</div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity5_1');toggle_opacity1_2('cancel-opacity5_2');toggle_opacity1_3('cancel-opacity5_3');toggle_opacity1_4('cancel-opacity5_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div id="cancel-opacity5_4" class="auteur">Addison Armstrong</div>
-                </div>
-
-
-
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div id="cancel-opacity6_1" class="book-name">Verre vaders</div><img id="cancel-opacity6_2"
-                            src="assets/boek6.jfif" alt="bookname">
-                    </a>
-                    <div id="cancel-opacity6_3" class="book-text">
-                        <div class="text2">Memoires van de Italiaanse auteur (1925-2016), waarin ze haar bijzondere jeugd beschrijft.</div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity6_1');toggle_opacity1_2('cancel-opacity6_2');toggle_opacity1_3('cancel-opacity6_3');toggle_opacity1_4('cancel-opacity5_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div id="cancel-opacity6_4" class="auteur">Marina Jarre</div>
-                </div>
-
-
-
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div id="cancel-opacity7_1" class="book-name">Get it done</div><img id="cancel-opacity7_2"
-                            src="assets/boek7.jfif" alt="bookname">
-                    </a>
-                    <div id="cancel-opacity7_3" class="book-text">
-                        <div class="text2">Hoe men met behulp van inzichten uit de motivatiewetenschap de eigen verlangens kan vaststellen en sturen zodat de persoonlijke doelen behaald kunnen worden.
-                        </div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity7_1');toggle_opacity1_2('cancel-opacity7_2');toggle_opacity1_3('cancel-opacity7_3');toggle_opacity1_4('cancel-opacity7_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div id="cancel-opacity7_4" class="auteur">Ayelet Fishbach</div>
-                </div>
-
-
-
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div id="cancel-opacity8_1" class="book-name">De gebeurtenis</div><img id="cancel-opacity8_2"
-                            src="assets/boek8.jfif" alt="bookname">
-                    </a>
-                    <div id="cancel-opacity8_3" class="book-text">
-                        <div class="text2">Een subtiel ingenieuze roman-in-verhalen van internationale allure.</div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity8_1');toggle_opacity1_2('cancel-opacity8_2');toggle_opacity1_3('cancel-opacity8_3');toggle_opacity1_4('cancel-opacity8_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div id="cancel-opacity8_4" class="auteur">Peter Terrin</div>
-                </div>
-
-
-
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div id="cancel-opacity9_1" class="book-name">Wankel koninkrijk</div><img id="cancel-opacity9_2"
-                            src="assets/boek9.jfif" alt="bookname">
-                    </a>
-                    <div id="cancel-opacity9_3" class="book-text">
-                        <div class="text2">Persoonlijk verslag van de voormalig NOS-correspondent over de veranderingen in het Verenigd Koninkrijk sinds de Brexit.
-                        </div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity9_1');toggle_opacity1_2('cancel-opacity9_2');toggle_opacity1_3('cancel-opacity9_3');toggle_opacity1_4('cancel-opacity9_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div id="cancel-opacity9_4" class="auteur">Tim de Wit</div>
-                </div>
-
-
-
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div id="cancel-opacity10_1" class="book-name">Genki</div><img id="cancel-opacity10_2"
-                            src="assets/boek10.jfif" alt="bookname">
-                    </a>
-                    <div id="cancel-opacity10_3" class="book-text">
-                        <div class="text2">de 10 gouden regels uit Japan voor een gelukkig en zinvol leven</div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity10_1');toggle_opacity1_2('cancel-opacity10_2');toggle_opacity1_3('cancel-opacity10_3');toggle_opacity1_4('cancel-opacity10_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div id="cancel-opacity10_4" class="auteur">Nicolas Chauvat</div>
-                </div>
-
-
-
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div id="cancel-opacity11_1" class="book-name">Moeder en zoon</div><img id="cancel-opacity11_2"
-                            src="assets/boek11.jfif" alt="bookname">
-                    </a>
-                    <div id="cancel-opacity11_3" class="book-text">
-                        <div class="text2">Een zoon neemt zijn moeder mee naar Sint-Petersburg om het schilderij 'De terugkeer van de verloren zoon' van Rembrandt te zien, wat hem aanzet tot nadenken over het begrip thuiskomen en de relatie met zijn ouders.
-                        </div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity11_1');toggle_opacity1_2('cancel-opacity11_2');toggle_opacity1_3('cancel-opacity11_3');toggle_opacity1_4('cancel-opacity11_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div id="cancel-opacity11_4" class="auteur">Abdelkader Benali</div>
-                </div>
-
-
-
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div id="cancel-opacity12_1" class="book-name">In de marge</div><img id="cancel-opacity12_2"
-                            src="assets/boek12.jfif" alt="bookname">
-                    </a>
-                    <div id="cancel-opacity12_3" class="book-text">
-                        <div class="text2">Biografische essays van de Italiaanse schrijfster (1943), met een inkijkje in haar leven en de oorsprong van haar literaire scheppingsdrang.
-                        </div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity12_1');toggle_opacity1_2('cancel-opacity12_2');toggle_opacity1_3('cancel-opacity12_3');toggle_opacity1_4('cancel-opacity12_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div id="cancel-opacity12_4" class="auteur">Elana Ferrante</div>
-                </div>
-
-
-
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div id="cancel-opacity13_1" class="book-name">School</div><img id="cancel-opacity13_2"
-                            src="assets/boek13.jfif" alt="bookname">
-                    </a>
-                    <div id="cancel-opacity13_3" class="book-text">
-                        <div class="text2">Zo'n 75 gedichten van 24 bekende kinderdichters over school. Ze gaan bijvoorbeeld over muziekles, zitten blijven en blozen. Met kleurenillustraties.</div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity13_1');toggle_opacity1_2('cancel-opacity13_2');toggle_opacity1_3('cancel-opacity13_3');toggle_opacity1_4('cancel-opacity13_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div id="cancel-opacity13_4" class="auteur">Gerard B.</div>
-                </div>
-
-
-
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div id="cancel-opacity14_1" class="book-name">Het huis</div><img id="cancel-opacity14_2"
-                            src="assets/boek14.jfif" alt="bookname">
-                    </a>
-                    <div id="cancel-opacity14_3" class="book-text">
-                        <div class="text2">Na haar ontslag vindt een zwangere, jonge vrouw nieuwe mogelijkheden om zich te ontplooien.</div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity14_1');toggle_opacity1_2('cancel-opacity14_2');toggle_opacity1_3('cancel-opacity14_3');toggle_opacity1_4('cancel-opacity14_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div id="cancel-opacity14_4" class="auteur">Olgo van der Meer</div>
-                </div>
-
-
-
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div id="cancel-opacity15_1" class="book-name">Hallo hallo</div><img id="cancel-opacity15_2"
-                            src="assets/boek15.jfif" alt="bookname">
-                    </a>
-                    <div id="cancel-opacity15_3" class="book-text">
-                        <div class="text2">Ontdek de overeenkomsten en verschillen tussen bekende en onbekende dieren. Sommige dieren hebben kleur en glitter, anderen hebben een patroon of schubben. Met kleurrijke, collageachtige prenten en tekst op rijm.</div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity15_1');toggle_opacity1_2('cancel-opacity15_2');toggle_opacity1_3('cancel-opacity15_3');toggle_opacity1_4('cancel-opacity15_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div id="cancel-opacity15_4" class="auteur">Brendan Wenzel</div>
-                </div>
-
-
-
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div id="cancel-opacity16_1" class="book-name">Een liefde</div><img id="cancel-opacity16_2"
-                            src="assets/boek16.jfif" alt="bookname">
-                    </a>
-                    <div id="cancel-opacity16_3" class="book-text">
-                        <div class="text2">Vince is homoseksueel en op zoek naar echte liefde, maar dat lijkt moeilijk te vinden in Parijs. Gelukkig kan hij altijd bouwen op zijn trouwe vriend Octave. Met zwart-wit illustraties.</div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity16_1');toggle_opacity1_2('cancel-opacity16_2');toggle_opacity1_3('cancel-opacity16_3');toggle_opacity1_4('cancel-opacity16_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div id="cancel-opacity16_4" class="auteur">Arnaud Cathrine</div>
-                </div>
-
-
-
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div id="cancel-opacity17_1" class="book-name">De Oorlog</div><img id="cancel-opacity17_2"
-                            src="assets/boek17.jfif" alt="bookname">
-                    </a>
-                    <div id="cancel-opacity17_3" class="book-text">
-                        <div class="text2">Overzicht van de gebeurtenissen tijdens de Tweede Wereldoorlog in Nederland en Nederlands-Indië en van de gevolgen daarvan op korte en lange termijn.
-                        </div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity17_1');toggle_opacity1_2('cancel-opacity17_2');toggle_opacity1_3('cancel-opacity17_3');toggle_opacity1_4('cancel-opacity17_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div id="cancel-opacity17_4" class="auteur">Ad van Liempt</div>
-                </div>
-
-
-
-
-                <div class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
-                        <div id="cancel-opacity18_1" class="book-name">Social media voor senioren</div><img id="cancel-opacity18_2"
-                            src="assets/boek18.jfif" alt="bookname">
-                    </a>
-                    <div id="cancel-opacity18_3" class="book-text">
-                        <div class="text2">Stapsgewijze uitleg van sociale media zoals onder andere YouTube, Facebook en Twitter; met tips om veilig te internetten.
-                        </div>
-                    </div>
-                    <button
-                        onclick="toggle_opacity1_1('cancel-opacity18_1');toggle_opacity1_2('cancel-opacity18_2');toggle_opacity1_3('cancel-opacity18_3');toggle_opacity1_4('cancel-opacity18_4');"
-                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
-                    <div id="cancel-opacity18_4" class="auteur">Annet van Betuw</div>
-                </div>
-
-            </main>
-
+            <h6 id="aantal-items">18 items</h6>
+            <h6 id="gesorteerd-items">• &nbsp;&nbsp;Oud-Nieuw</h6>
+            <hr>
             <div id="drop-down">
                 <ul class="list-plaatsen">
                     <li><input type="checkbox">Oosterdok</label></li>
@@ -926,19 +129,836 @@
                     <li><input type="checkbox">Postjesweg</li>
                 </ul>
             </div>
+            <ul class="container-books">
 
-            <!-- <div id="pop-up">
-            </div> -->
+                <li id="container-gone-1" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">All the bright places</h5><img src="assets/Book1.jfif"
+                            alt="All the bright places">
+                    </a>
+                        <p class="text">Violet en Finch ontmoeten elkaar boven op de klokkentoren van school waar
+                            ze
+                            allebei overwegen ze er vanaf te springen.</p>
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-1')" id="list-icon-1"
+                                class="material-symbols-outlined">format_list_bulleted</button>
 
-            <div id="overlap-for-menu">
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-1');toggle_thumbs_up_1goes('thumbs-up-button-1')"
+                                id="thumbs-up-button-1" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-1');toggle_thumbs_up_2goes('thumbs-up-button-filled-1')"
+                                id="thumbs-up-button-filled-1" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-1');book_individual('container-gone-1');toggle_thumbs_down_2comes('thumbs-down-button-filled-1');toggle_thumbs_down_1goes('thumbs-down-button-1')"
+                                id="thumbs-down-button-1" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-1');toggle_thumbs_down_2goes('thumbs-down-button-filled-1')"
+                                id="thumbs-down-button-filled-1" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Jenniver Niven</h6>
+                </li>
 
 
-            </div>
 
-        </div>
+                <li id="container-gone-2" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">How to fall in love</h5><img src="assets/book2.jfif"
+                            alt="How to fall in love">
+                    </a>
+                        <p class="text">Een jonge vrouw krijgt twee weken de tijd om een jongeman
+                            zover
+                            te krijgen dat hij niet opnieuw een zelfmoordpoging.
+                        </p>
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-2')" id="list-icon-2"
+                                class="material-symbols-outlined">format_list_bulleted</button>
+
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-2');toggle_thumbs_up_1goes('thumbs-up-button-2')"
+                                id="thumbs-up-button-2" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-2');toggle_thumbs_up_2goes('thumbs-up-button-filled-2')"
+                                id="thumbs-up-button-filled-2" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-2');book_individual('container-gone-2');toggle_thumbs_down_2comes('thumbs-down-button-filled-2');toggle_thumbs_down_1goes('thumbs-down-button-2')"
+                                id="thumbs-down-button-2" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-2');toggle_thumbs_down_2goes('thumbs-down-button-filled-2')"
+                                id="thumbs-down-button-filled-2" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Cecelia Ahern</h6>
+                </li>
 
 
+
+                <li id="container-gone-3" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">One of us is lying</h5><img src="assets/book3.jfif"
+                            alt="One of us is lying">
+                    </a>
+                        <p class="text">Vijf leerlingen moeten voor straf nablijven. Een van hen, zal het
+                            klaslokaal
+                            echter nooit verlaten... Wie heeft het gedaan?</p>
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-3')" id="list-icon-3"
+                                class="material-symbols-outlined">format_list_bulleted</button>
+
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-3');toggle_thumbs_up_1goes('thumbs-up-button-3')"
+                                id="thumbs-up-button-3" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-3');toggle_thumbs_up_2goes('thumbs-up-button-filled-3')"
+                                id="thumbs-up-button-filled-3" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-3');book_individual('container-gone-3');toggle_thumbs_down_2comes('thumbs-down-button-filled-3');toggle_thumbs_down_1goes('thumbs-down-button-3')"
+                                id="thumbs-down-button-3" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-3');toggle_thumbs_down_2goes('thumbs-down-button-filled-3')"
+                                id="thumbs-down-button-filled-3" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Karen M. McManus</h6>
+                </li>
+
+
+
+                <li id="container-gone-4" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">Evelyn Hugo</h5><img src="assets/book4.jfif" alt="bookname">
+                    </a>
+                        <p class="text">De Amerikaanse filmdiva Evelyn Hugo heeft na jaren mediastilte besloten haar
+                            levensverhaal toe te vertrouwen.</p>
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-4')" id="list-icon-4"
+                                class="material-symbols-outlined">format_list_bulleted</button>
+
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-4');toggle_thumbs_up_1goes('thumbs-up-button-4')"
+                                id="thumbs-up-button-4" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-4');toggle_thumbs_up_2goes('thumbs-up-button-filled-4')"
+                                id="thumbs-up-button-filled-4" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-4');book_individual('container-gone-4');toggle_thumbs_down_2comes('thumbs-down-button-filled-4');toggle_thumbs_down_1goes('thumbs-down-button-4')"
+                                id="thumbs-down-button-4" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-4');toggle_thumbs_down_2goes('thumbs-down-button-filled-4')"
+                                id="thumbs-down-button-filled-4" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Taylor Jenkins Reid</h6>
+                </li>
+
+
+
+                <li id="container-gone-5" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">In een ander leven</h5><img src="assets/book5.jfif" alt="bookname">
+                    </a>
+                        <p class="text">Op haar terugkomstfeestje in Los Angeles kiest een 29-jarige vrouw of ze met
+                            haar vriendin naar huis gaat.
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-5')" id="list-icon-5"
+                                class="material-symbols-outlined">format_list_bulleted</button>
+
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-5');toggle_thumbs_up_1goes('thumbs-up-button-5')"
+                                id="thumbs-up-button-5" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-5');toggle_thumbs_up_2goes('thumbs-up-button-filled-5')"
+                                id="thumbs-up-button-filled-5" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-5');book_individual('container-gone-5');toggle_thumbs_down_2comes('thumbs-down-button-filled-5');toggle_thumbs_down_1goes('thumbs-down-button-5')"
+                                id="thumbs-down-button-5" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-5');toggle_thumbs_down_2goes('thumbs-down-button-filled-5')"
+                                id="thumbs-down-button-filled-5" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Taylor Jenkins Reid</h6>
+                </li>
+
+
+
+                <li id="container-gone-6" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">Daisy Jones & the Six</h5><img src="assets/book6.jfif" alt="bookname">
+                    </a>
+                        <p class="text">Het wel en wee van een popgroep vanaf de start, hun successen
+                         en hun einde na het vertrek van de zangeres.
+                        </p>
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-6')" id="list-icon-6"
+                                class="material-symbols-outlined">format_list_bulleted</button>
+
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-6');toggle_thumbs_up_1goes('thumbs-up-button-6')"
+                                id="thumbs-up-button-6" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-6');toggle_thumbs_up_2goes('thumbs-up-button-filled-6')"
+                                id="thumbs-up-button-filled-6" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-6');book_individual('container-gone-6');toggle_thumbs_down_2comes('thumbs-down-button-filled-6');toggle_thumbs_down_1goes('thumbs-down-button-6')"
+                                id="thumbs-down-button-6" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-6');toggle_thumbs_down_2goes('thumbs-down-button-filled-6')"
+                                id="thumbs-down-button-filled-6" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Taylor Jenkins Reid</h6>
+                </li>
+
+
+
+                <li id="container-gone-7" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">Sprong in het diepe</h5><img src="assets/book7.jfif" alt="bookname">
+                    </a>
+                        <p class="text">Wanneer een jonge vrouw haar baan verliest, vertrekt zij naar Duitsland waar zij de man van haar dromen ontmoet.
+                        </p>
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-7')" id="list-icon-7"
+                                class="material-symbols-outlined">format_list_bulleted</button>
+
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-7');toggle_thumbs_up_1goes('thumbs-up-button-7')"
+                                id="thumbs-up-button-7" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-7');toggle_thumbs_up_2goes('thumbs-up-button-filled-7')"
+                                id="thumbs-up-button-filled-7" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-7');book_individual('container-gone-7');toggle_thumbs_down_2comes('thumbs-down-button-filled-7');toggle_thumbs_down_1goes('thumbs-down-button-7')"
+                                id="thumbs-down-button-7" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-7');toggle_thumbs_down_2goes('thumbs-down-button-filled-7')"
+                                id="thumbs-down-button-filled-7" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Tamara Haagmans</h6>
+                </li>
+
+
+
+                <li id="container-gone-8" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">Normal people</h5><img src="assets/book8.jfif" alt="bookname">
+                    </a>
+                        <p class="text">De relatie van een Ierse jongen met zijn klasgenote loopt anders dan zij had
+                            gehoopt omdat hij niet 100% voor haar kiest.
+                        </p>
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-8')" id="list-icon-8"
+                                class="material-symbols-outlined">format_list_bulleted</button>
+
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-8');toggle_thumbs_up_1goes('thumbs-up-button-8')"
+                                id="thumbs-up-button-8" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-8');toggle_thumbs_up_2goes('thumbs-up-button-filled-8')"
+                                id="thumbs-up-button-filled-8" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-8');book_individual('container-gone-8');toggle_thumbs_down_2comes('thumbs-down-button-filled-8');toggle_thumbs_down_1goes('thumbs-down-button-8')"
+                                id="thumbs-down-button-8" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-8');toggle_thumbs_down_2goes('thumbs-down-button-filled-8')"
+                                id="thumbs-down-button-filled-8" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Sally Rooney</h6>
+                </li>
+
+
+
+                <li id="container-gone-9" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">The song of Achilles</h5><img src="assets/book9.jfif" alt="bookname">
+                    </a>
+                        <p class="text">De Griekse mythologische held Achilles vat een vriendschap op voor
+                            een jongeling die door zijn vader op 12-jarige leeftijd.
+                        </p>
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-9')" id="list-icon-9"
+                                class="material-symbols-outlined">format_list_bulleted</button>
+
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-9');toggle_thumbs_up_1goes('thumbs-up-button-9')"
+                                id="thumbs-up-button-9" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-9');toggle_thumbs_up_2goes('thumbs-up-button-filled-9')"
+                                id="thumbs-up-button-filled-9" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-9');book_individual('container-gone-9');toggle_thumbs_down_2comes('thumbs-down-button-filled-9');toggle_thumbs_down_1goes('thumbs-down-button-9')"
+                                id="thumbs-down-button-9" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-9');toggle_thumbs_down_2goes('thumbs-down-button-filled-9')"
+                                id="thumbs-down-button-filled-9" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Madeleine Miller</h6>
+                </li>
+
+
+
+                <li id="container-gone-10" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">Een daad van liefde</h5><img src="assets/book10.jfif" alt="bookname">
+                    </a>
+                        <p class="text">Frankrijk. Nadat ze het door oorlog verwoeste Polen moesten ontvluchten,
+                            vindt Sara onderdak in een prachtig.
+                        </p>
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-10')" id="list-icon-10"
+                                class="material-symbols-outlined">format_list_bulleted</button>
+
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-10');toggle_thumbs_up_1goes('thumbs-up-button-10')"
+                                id="thumbs-up-button-10" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-10');toggle_thumbs_up_2goes('thumbs-up-button-filled-10')"
+                                id="thumbs-up-button-filled-10" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-10');book_individual('container-gone-10');toggle_thumbs_down_2comes('thumbs-down-button-filled-10');toggle_thumbs_down_1goes('thumbs-down-button-10')"
+                                id="thumbs-down-button-10" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-10');toggle_thumbs_down_2goes('thumbs-down-button-filled-10')"
+                                id="thumbs-down-button-filled-10" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Carol Drinkwater</h6>
+                </li>
+
+
+
+                <li id="container-gone-11" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">Wat stilte wil</h5><img src="assets/book11.jfif" alt="bookname">
+                    </a>
+                        <p class="text">Zingen is Anna’s grote geluk. Zij heeft de stem, het talent en de ambitie, maar
+                            een carrière als zangeres is voor een meisje.</p>
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-11')" id="list-icon-11"
+                                class="material-symbols-outlined">format_list_bulleted</button>
+
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-11');toggle_thumbs_up_1goes('thumbs-up-button-11')"
+                                id="thumbs-up-button-11" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-11');toggle_thumbs_up_2goes('thumbs-up-button-filled-11')"
+                                id="thumbs-up-button-filled-11" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-11');book_individual('container-gone-11');toggle_thumbs_down_2comes('thumbs-down-button-filled-11');toggle_thumbs_down_1goes('thumbs-down-button-11')"
+                                id="thumbs-down-button-11" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-11');toggle_thumbs_down_2goes('thumbs-down-button-filled-11')"
+                                id="thumbs-down-button-filled-11" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Arthur Japin</h6>
+                </li>
+
+
+
+                <li id="container-gone-12" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">Lichtjaren beter</h5><img src="assets/book12.jfif" alt="bookname">
+                    </a>
+                        <p class="text">Een verhaal over jezelf heruitvinden, inspiratie, over levenslust, vriendschap,
+                            en vooral over muziek.</p>
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-12')" id="list-icon-12"
+                                class="material-symbols-outlined">format_list_bulleted</button>
+
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-12');toggle_thumbs_up_1goes('thumbs-up-button-12')"
+                                id="thumbs-up-button-12" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-12');toggle_thumbs_up_2goes('thumbs-up-button-filled-12')"
+                                id="thumbs-up-button-filled-12" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-12');book_individual('container-gone-12');toggle_thumbs_down_2comes('thumbs-down-button-filled-12');toggle_thumbs_down_1goes('thumbs-down-button-12')"
+                                id="thumbs-down-button-12" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-12');toggle_thumbs_down_2goes('thumbs-down-button-filled-12')"
+                                id="thumbs-down-button-filled-12" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Tim Knol</h6>
+                </li>
+
+
+
+                <li id="container-gone-13" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">De prooi</h5><img src="assets/book13.jfif" alt="bookname">
+                    </a>
+                        <p class="text">Tijdens de koudste dagen van het jaar is een reddingsteam op de afgelegen
+                            hoogvlakten van IJsland.</p>
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-13')" id="list-icon-13"
+                                class="material-symbols-outlined">format_list_bulleted</button>
+
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-13');toggle_thumbs_up_1goes('thumbs-up-button-13')"
+                                id="thumbs-up-button-13" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-13');toggle_thumbs_up_2goes('thumbs-up-button-filled-13')"
+                                id="thumbs-up-button-filled-13" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-13');book_individual('container-gone-13');toggle_thumbs_down_2comes('thumbs-down-button-filled-13');toggle_thumbs_down_1goes('thumbs-down-button-13')"
+                                id="thumbs-down-button-13" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-13');toggle_thumbs_down_2goes('thumbs-down-button-filled-13')"
+                                id="thumbs-down-button-filled-13" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Yrsa Sigurðardóttir</h6>
+                </li>
+
+
+
+                <li id="container-gone-14" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">Bore-out</h5><img src="assets/book14.jfif" alt="bookname">
+                    </a>
+                        <p class="text">Praktische adviezen en oefeningen voor zowel medewerkers als leidinggevenden
+                            voor de aanpak van bore-out.
+                        </p>
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-14')" id="list-icon-14"
+                                class="material-symbols-outlined">format_list_bulleted</button>
+
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-14');toggle_thumbs_up_1goes('thumbs-up-button-14')"
+                                id="thumbs-up-button-14" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-14');toggle_thumbs_up_2goes('thumbs-up-button-filled-14')"
+                                id="thumbs-up-button-filled-14" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-14');book_individual('container-gone-14');toggle_thumbs_down_2comes('thumbs-down-button-filled-14');toggle_thumbs_down_1goes('thumbs-down-button-14')"
+                                id="thumbs-down-button-14" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-14');toggle_thumbs_down_2goes('thumbs-down-button-filled-14')"
+                                id="thumbs-down-button-filled-14" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Marjo Crombach</h6>
+                </li>
+
+
+
+                <li id="container-gone-15" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">Operatie Raaf</h5><img src="assets/book15.jfif" alt="bookname">
+                    </a>
+                        <p class="text">In deze spannende reconstructie doen Geert-Jan en Carry Knoops verslag van de
+                            juridische strijd die zij jarenlang.</p>
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-15')" id="list-icon-15"
+                                class="material-symbols-outlined">format_list_bulleted</button>
+
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-15');toggle_thumbs_up_1goes('thumbs-up-button-15')"
+                                id="thumbs-up-button-15" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-15');toggle_thumbs_up_2goes('thumbs-up-button-filled-15')"
+                                id="thumbs-up-button-filled-15" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-15');book_individual('container-gone-15');toggle_thumbs_down_2comes('thumbs-down-button-filled-15');toggle_thumbs_down_1goes('thumbs-down-button-15')"
+                                id="thumbs-down-button-15" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-15');toggle_thumbs_down_2goes('thumbs-down-button-filled-15')"
+                                id="thumbs-down-button-filled-15" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Geert-Jan</h6>
+                </li>
+
+
+
+                <li id="container-gone-16" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">Recitatief</h5><img src="assets/book16.jfif" alt="bookname">
+                    </a>
+                        <p class="text">An Anthology of African American Women, an anthology edited by Amiri Baraka and
+                            Amina Baraka.</p>
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-16')" id="list-icon-16"
+                                class="material-symbols-outlined">format_list_bulleted</button>
+
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-16');toggle_thumbs_up_1goes('thumbs-up-button-16')"
+                                id="thumbs-up-button-16" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-16');toggle_thumbs_up_2goes('thumbs-up-button-filled-16')"
+                                id="thumbs-up-button-filled-16" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-16');book_individual('container-gone-16');toggle_thumbs_down_2comes('thumbs-down-button-filled-16');toggle_thumbs_down_1goes('thumbs-down-button-16')"
+                                id="thumbs-down-button-16" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-16');toggle_thumbs_down_2goes('thumbs-down-button-filled-16')"
+                                id="thumbs-down-button-filled-16" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Toni Morrison</h6>
+                </li>
+
+
+
+                <li id="container-gone-17" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">Terug naar Insulinde</h5><img src="assets/book17.jfif" alt="bookname">
+                    </a>
+                        <p class="text">Een indringende roman over familie, loyaliteit, liefde en hoop in tijden van
+                            oorlog.</p>
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-17')" id="list-icon-17"
+                                class="material-symbols-outlined">format_list_bulleted</button>
+
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-17');toggle_thumbs_up_1goes('thumbs-up-button-17')"
+                                id="thumbs-up-button-17" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-17');toggle_thumbs_up_2goes('thumbs-up-button-filled-17')"
+                                id="thumbs-up-button-filled-17" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-17');book_individual('container-gone-17');toggle_thumbs_down_2comes('thumbs-down-button-filled-17');toggle_thumbs_down_1goes('thumbs-down-button-17')"
+                                id="thumbs-down-button-17" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-17');toggle_thumbs_down_2goes('thumbs-down-button-filled-17')"
+                                id="thumbs-down-button-filled-17" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Elle van Rijn</h6>
+                </li>
+
+
+
+                <li id="container-gone-18" class="container-book-individual"><a href="https://www.youtube.nl/"
+                        target="_blank">
+                        <h5 class="book-name">Componist Foltýn</h5><img src="assets/book18.jfif" alt="bookname">
+                    </a>
+                        <p class="text">Diverse personages geven elk hun kijk op Bedrich Foltýn, een mislukt componist
+                            die zichzelf geniaal vindt.
+                        </p>
+                        <div class="text-icons"><button onclick="toggle_list('list-icon-18')" id="list-icon-18"
+                                class="material-symbols-outlined">format_list_bulleted</button>
+
+                            <button
+                                onclick="toggle_thumbs_up_2comes('thumbs-up-button-filled-18');toggle_thumbs_up_1goes('thumbs-up-button-18')"
+                                id="thumbs-up-button-18" class="fa fa-thumbs-o-up fa-2x"></button><button
+                                onclick="toggle_thumbs_up_1comes('thumbs-up-button-18');toggle_thumbs_up_2goes('thumbs-up-button-filled-18')"
+                                id="thumbs-up-button-filled-18" class="fa fa-thumbs-up fa-2x"></button>
+
+                            <button
+                                onclick="setTimeout(book_individual_gone, 800, 'container-gone-18');book_individual('container-gone-18');toggle_thumbs_down_2comes('thumbs-down-button-filled-18');toggle_thumbs_down_1goes('thumbs-down-button-18')"
+                                id="thumbs-down-button-18" class="fa fa-thumbs-o-down fa-2x"></button><button
+                                onclick="toggle_thumbs_down_1comes('thumbs-down-button-18');toggle_thumbs_down_2goes('thumbs-down-button-filled-18')"
+                                id="thumbs-down-button-filled-18" class="fa fa-thumbs-down fa-2x"></button>
+                        </div>
+                    <h6 class="auteur">Karel Čapek</h6>
+                </li>
+            </ul>
+
+
+
+
+            <ul id="target" class="container-books2">
+
+                <li id="toggle-book-1" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">Vind ik leuk?!</h5><img
+                            src="assets/boek1.jfif" alt="bookname">
+                    </a>
+                    
+                        <p class="text">Tori heeft een relatie waarin ze niet gelukkig is en wordt continu
+                            geconfronteerd met leeftijdsgenoten die gaan trouwen.</p>
+                    
+                    <button onclick="toggle_individual('toggle-book-1')"
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Holly Bourne</h6>
+                    <h6 class="datum">uitgeleend op <br> 02/10/2022</h6>
+
+                </li>
+
+
+
+                <li id="toggle-book-2" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">England, England</h5><img
+                            src="assets/boek2.jfif" alt="How to fall in love">
+                    </a>
+                    
+                        <p class="text">Kort na het jaar 2000 wordt het eiland Wight omgetoverd tot een gigantisch
+                            Engels Madurodam.
+                        </p>
+                    
+                    <button onclick="toggle_individual('toggle-book-2')" 
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Julian Barnes</h6>
+                    <h6 class="datum">uitgeleend op <br> 02/10/2022</h6>
+
+                </li>
+
+
+
+
+                <li id="toggle-book-3" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">Het boek</h5><img
+                                src="assets/boek3.jfif" alt="One of us is lying">
+                    </a>
+                    
+                        <p class="text">Uit de lucht dwarrelen allemaal boeken naar beneden. Olifant vangt er een op en
+                            kan niet
+                            meer stoppen met lezen.</p>
+                    
+                    <button onclick="toggle_individual('toggle-book-3')"
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Marije Tolman</h6>
+                    <h6 class="datum">uitgeleend op <br> 27/09/2022</h6>
+
+                </li>
+
+
+
+
+                <li id="toggle-book-4" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">Ouders!?!</h5><img
+                                src="assets/boek4.jfif" alt="bookname">
+                    </a>
+                    
+                        <p class="text">Sterre heeft haar vader sinds de scheiding van haar ouders al bijna twee jaar
+                            niet meer
+                            gezien.</p>
+                    
+                    <button onclick="toggle_individual('toggle-book-4')"
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Annemarie Bon</h6>
+                    <h6 class="datum">uitgeleend op <br> 12/07/2022</h6>
+
+                </li>
+
+
+
+
+                <li id="toggle-book-5" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">De oorlogsbibliotheek </h5><img
+                             src="assets/boek5.jfif" alt="bookname">
+                    </a>
+                    
+                        <p class="text">Twee vrouwen. Eén geheim. Een waarheid om voor te vechten.</p>
+                    
+                    <button onclick="toggle_individual('toggle-book-5')"
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Addison Armstrong</h6>
+                    <h6 class="datum">uitgeleend op <br> 12/07/2022</h6>
+
+                </li>
+
+
+
+
+                <li id="toggle-book-6" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">Verre vaders</h5><img
+                                src="assets/boek6.jfif" alt="bookname">
+                    </a>
+                    
+                        <p class="text">Memoires van de Italiaanse auteur2 (1925-2016), waarin ze haar bijzondere jeugd
+                            beschrijft.
+                        </p>
+                    
+                    <button onclick="toggle_individual('toggle-book-6')"
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Marina Jarre</h6>
+                    <h6 class="datum">uitgeleend op <br> 26/02/2022</h6>
+
+                </li>
+
+
+
+
+                <li id="toggle-book-7" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">Get it done</h5><img
+                                src="assets/boek7.jfif" alt="bookname">
+                    </a>
+                    
+                        <p class="text">Hoe men met behulp van inzichten uit de motivatiewetenschap de eigen verlangens
+                            kan
+                            vaststellen.
+                        </p>
+                    
+                    <button onclick="toggle_individual('toggle-book-7')"
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Ayelet Fishbach</h6>
+                    <h6 class="datum">uitgeleend op <br> 30/12/2021</h6>
+
+                </li>
+
+
+
+
+                <li id="toggle-book-8" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">De gebeurtenis</h5><img
+                                src="assets/boek8.jfif" alt="bookname">
+                    </a>
+                    
+                        <p class="text">Een subtiel ingenieuze roman-in-verhalen van internationale allure.</p>
+                    
+                    <button onclick="toggle_individual('toggle-book-8')"
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Peter Terrin</h6>
+                    <h6 class="datum">uitgeleend op <br> 03/07/2021</h6>
+
+                </li>
+
+
+
+
+                <li id="toggle-book-9" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">Wankel koninkrijk</h5><img
+                                src="assets/boek9.jfif" alt="bookname">
+                    </a>
+                    
+                        <p class="text">Persoonlijk verslag van de voormalig NOS-correspondent over de veranderingen in
+                            het Verenigd
+                            Koninkrijk sinds de Brexit.
+                        </p>
+                    
+                    <button onclick="toggle_individual('toggle-book-9')"
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Tim de Wit</h6>
+                    <h6 class="datum">uitgeleend op <br> 01/07/2021</h6>
+
+                </li>
+
+
+
+
+                <li id="toggle-book-10" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">Genki</h5><img
+                                src="assets/boek10.jfif" alt="bookname">
+                    </a>
+                    
+                        <p class="text">de 10 gouden regels uit Japan voor een gelukkig en zinvol leven</p>
+                    
+                    <button onclick="toggle_individual('toggle-book-10')"
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Nicolas Chauvat</h6>
+                    <h6 class="datum">uitgeleend op <br> 18/06/2021</h6>
+
+                </li>
+
+
+
+
+                <li id="toggle-book-11" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">Moeder en zoon</h5><img
+                                src="assets/boek11.jfif" alt="bookname">
+                    </a>
+                    
+                        <p class="text">Een zoon neemt zijn moeder mee naar Sint-Petersburg om het schilderij 'De
+                            terugkeer van de
+                            verloren zoon' van Rembrandt te zien.
+                        </p>
+                    
+                    <button onclick="toggle_individual('toggle-book-11')"
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Abdelkader Benali</h6>
+                    <h6 class="datum">uitgeleend op <br> 10/06/2021</h6>
+
+                </li>
+
+
+
+
+                <li id="toggle-book-12" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">In de marge</h5><img
+                                src="assets/boek12.jfif" alt="bookname">
+                    </a>
+                    
+                        <p class="text">Biografische essays van de Italiaanse schrijfster (1943), met een inkijkje in
+                            haar leven en
+                            de oorsprong van haar literaire drang.
+                        </p>
+                    
+                    <button onclick="toggle_individual('toggle-book-12')"
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Elana Ferrante</h6>
+                    <h6 class="datum">uitgeleend op <br> 15/05/2021</h6>
+
+                </li>
+
+
+
+
+                <li id="toggle-book-13" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">School</h5><img
+                                src="assets/boek13.jfif" alt="bookname">
+                    </a>
+                    
+                        <p class="text">Zo'n 75 gedichten van 24 bekende kinderdichters over school. Ze gaan
+                            bijvoorbeeld over
+                            muziekles, zitten blijven en blozen.</p>
+                    
+                    <button onclick="toggle_individual('toggle-book-13')"
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Gerard B.</h6>
+                    <h6 class="datum">uitgeleend op <br> 30/04/2021</h6>
+
+                </li>
+
+
+
+
+                <li id="toggle-book-14" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">Het huis</h5><img
+                                src="assets/boek14.jfif" alt="bookname">
+                    </a>
+                    
+                        <p class="text">Na haar ontslag vindt een zwangere, jonge vrouw nieuwe mogelijkheden om zich te
+                            ontplooien.
+                        </p>
+                    
+                    <button onclick="toggle_individual('toggle-book-14')"
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Olgo van der Meer</h6>
+                    <h6 class="datum">uitgeleend op <br> 17/02/2021</h6>
+
+                </li>
+
+
+
+
+                <li id="toggle-book-15" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">Hallo hallo</h5><img
+                                src="assets/boek15.jfif" alt="bookname">
+                    </a>
+                    
+                        <p class="text">Ontdek de overeenkomsten en verschillen tussen bekende en onbekende dieren.
+                            en tekst op rijm.</p>
+                    
+                    <button onclick="toggle_individual('toggle-book-15')"
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Brendan Wenzel</h6>
+                    <h6 class="datum">uitgeleend op <br> 01/01/2021</h6>
+
+                </li>
+
+
+
+
+                <li id="toggle-book-16" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">Een liefde</h5><img
+                                src="assets/boek16.jfif" alt="bookname">
+                    </a>
+                    
+                        <p class="text">Vince is homoseksueel en op zoek naar echte liefde, maar dat lijkt moeilijk te
+                            vinden in
+                            Parijs.</p>
+                    
+                    <button onclick="toggle_individual('toggle-book-16')"
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Arnaud Cathrine</h6>
+                    <h6 class="datum">uitgeleend op <br> 28/11/2020</h6>
+
+                </li>
+
+
+
+
+                <li id="toggle-book-17" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">De Oorlog</h5><img
+                                src="assets/boek17.jfif" alt="bookname">
+                    </a>
+                    
+                        <p class="text">Overzicht van de gebeurtenissen tijdens de Tweede Wereldoorlog in Nederland en
+                            Nederlands-Indië.
+                        </p>
+                    
+                    <button onclick="toggle_individual('toggle-book-17')"
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Ad van Liempt</h6>
+                    <h6 class="datum">uitgeleend op <br> 02/10/2020</h6>
+
+                </li>
+
+
+
+
+                <li id="toggle-book-18" class="container-book-individual"><a href="https://www.google.nl/" target="_blank">
+                        <h5 class="book-name">Social media voor senioren</h5><img
+                             src="assets/boek18.jfif" alt="bookname">
+                    </a>
+                    
+                        <p class="text">Stapsgewijze uitleg van sociale media zoals onder andere YouTube, Facebook en
+                            Twitter; met
+                            tips om veilig te internetten.
+                        </p>
+                    
+                    <button onclick="toggle_individual('toggle-book-18')"
+                        id="cancel-suggestion" class="material-symbols-outlined">cancel</button>
+                    <h6 class="auteur2">Annet van Betuw</h6>
+                    <h6 class="datum">uitgeleend op <br> 03/07/2020</h6>
+
+                </li>
+
+            </ul>
+
+
+
+            
+        </main>
     </div>
+
 </body>
 
 </html>

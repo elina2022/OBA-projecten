@@ -1,6 +1,6 @@
 function toggle_visibility(id) {
   var e = document.getElementById(id);
-  e.style.display = ((e.style.display != 'none') ? 'none' : 'grid');
+  e.style.height = ((e.style.height != '210%') ? '210%' : '0%');
 }
 
 
@@ -10,12 +10,12 @@ function toggle_h1(id) {
 }
 
 
-function toggle_h5_1(id) {
+function toggle_h2_1(id) {
   var e = document.getElementById(id);
   e.style.display = ((e.style.display != 'none') ? 'none' : 'inline');
 }
 
-function toggle_h5_2(id) {
+function toggle_h2_2(id) {
   var e = document.getElementById(id);
   e.style.display = ((e.style.display != 'inline') ? 'inline' : 'none');
 }
@@ -28,15 +28,20 @@ function toggle_text() {
     document.getElementById("stem-af").innerHTML = "Bekijk aanbevelingen";
   } else {
     clicked = false;
-    document.getElementById("stem-af").innerHTML = "Stem voorgaande uitleningen af";
+    document.getElementById("stem-af").innerHTML = "Stem<span id='button2media'> voorgaande uitleningen</span> af";
   }
 }
+
+function toggle_sort(id) {
+  var e = document.getElementById(id);
+  e.style.display = ((e.style.display != 'block') ? 'block' : 'none');
+}
+
 
 
 function toggle_style(id) {
   var e = document.getElementById(id);
-  e.style.color = ((e.style.color != 'var(--clr-black)') ? 'var(--clr-black)' : 'var(--clr-white)');
-  e.style.backgroundColor = ((e.style.backgroundColor != 'var(--clr-container-books)') ? 'var(--clr-container-books)' : 'var(--clr-black)');
+  e.style.border = ((e.style.border != '1px solid black') ? '1px solid black' : 'none');
 }
 
 
@@ -89,64 +94,57 @@ function toggle_thumbs_down_2goes(id) {
 
 function book_individual(id) {
   var e = document.getElementById(id);
+  e.style.visibility = ((e.style.visibility != 'hidden') ? 'hidden' : 'hidden');
+}
+
+function book_individual_gone(id) {
+  var e = document.getElementById(id);
   e.style.display = ((e.style.display != 'none') ? 'none' : 'none');
-  e.style.transition = ((e.style.transition != '0.5s ease-in-out') ? '0.5s ease-in-out' : '0.5s ease-in-out');
 }
 
-// function book_individual_display(id) {
-//   var e = document.getElementById(id);
-//   e.style.display = ((e.style.display != 'none') ? 'none' : 'flex');
-// }
 
 
-
-function toggle_opacity1_1(id) {
-  var e = document.getElementById(id);
-  e.style.opacity = ((e.style.opacity != '0.3') ? '0.3' : '1');
+function toggle_individual(id) {
+  var x = document.getElementById(id);
+  x.style.opacity = ((x.style.opacity != '0.4') ? '0.4' : '1');
 }
 
-function toggle_opacity1_2(id) {
-  var e = document.getElementById(id);
-  e.style.opacity = ((e.style.opacity != '0.3') ? '0.3' : '1');
-  e.style.pointerEvents = ((e.style.pointerEvents != 'none') ? 'none' : 'auto');
-}
 
-function toggle_opacity1_3(id) {
-  var e = document.getElementById(id);
-  e.style.opacity = ((e.style.opacity != '0.3') ? '0.3' : '1');
-}
 
-function toggle_opacity1_4(id) {
-  var e = document.getElementById(id);
-  e.style.opacity = ((e.style.opacity != '0.3') ? '0.3' : '1');
-}
+
+
+
+
 
 
 function menu(id) {
   var e = document.getElementById(id);
-  e.style.display = ((e.style.display != 'block') ? 'block' : 'none');
-}
-
-function opacity_for_menu(id) {
-  var e = document.getElementById(id);
-  e.style.display = ((e.style.display != 'block') ? 'block' : 'none');
+e.style.height = ((e.style.height != '50vh') ? '50vh' : '0vh');
+e.style.width = ((e.style.width != '250px') ? '250px' : '0px');
+e.style.top = ((e.style.top != '17.7%') ? '17.7%' : '13%');
+e.style.left = ((e.style.left != '0%') ? '0%' : '1%');
 }
 
 function menu_gone(id) {
   var e = document.getElementById(id);
-  e.style.display = ((e.style.display != 'none') ? 'none' : 'none');
-}
-
-function opacity_for_menu_gone(id) {
-  var e = document.getElementById(id);
-  e.style.display = ((e.style.display != 'none') ? 'none' : 'none');
+  e.style.height = ((e.style.height != '0vh') ? '0vh' : '0vh');
+  e.style.width = ((e.style.width != '0px') ? '0px' : '0px');
+  e.style.top = ((e.style.top != '13%') ? '13%' : '13%');
+  e.style.left = ((e.style.left != '1%') ? '1%' : '1%');
 }
 
 function toggle_style_gone(id) {
   var e = document.getElementById(id);
-  e.style.color = ((e.style.color != 'var(--clr-white)') ? 'var(--clr-white)' : 'var(--clr-white)');
-  e.style.backgroundColor = ((e.style.backgroundColor != 'var(--clr-black)') ? 'var(--clr-black)' : 'var(--clr-black)');
+  e.style.border = ((e.style.border != 'none') ? 'none' : 'none');
 }
+
+
+
+
+
+
+
+
 
 
 function toggle_list(id) {
@@ -177,9 +175,8 @@ function toggle_sidebar_button(id) {
     x.innerHTML = "Show menu";
   }
   x.style.transform = ((x.style.transform != 'rotate(-90deg)') ? 'rotate(-90deg)' : 'rotate(0deg)');
-  x.style.left = ((x.style.left != '-45px') ? '-45px' : '2%');
-  x.style.top = ((x.style.top != '5vh') ? '5vh' : '-2%');
+  x.style.marginLeft = ((x.style.marginLeft != '-90px') ? '-90px' : '-5px');
+  x.style.marginTop = ((x.style.marginTop != '40px') ? '40px' : '-35px');
   x.style.transition = ((x.style.transition != '0.5s ease-in-out') ? '0.5s ease-in-out' : '0.5s ease-in-out');
-  x.style.color = ((x.style.color != 'var(--clr-black)') ? 'var(--clr-black)' : 'var(--clr-white)');
-  x.style.backgroundColor = ((x.style.backgroundColor != 'var(--clr-container-books)') ? 'var(--clr-container-books)' : 'var(--clr-black)');
+  x.style.border = ((x.style.border != '0.5px solid black') ? '0.5px solid black' : 'none');
 }
