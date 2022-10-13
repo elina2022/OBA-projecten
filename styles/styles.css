@@ -58,7 +58,7 @@ body {
     background-color: var(--clr-white);
     border-radius: 10px;
     position: relative;
-    /* height: 95vh; */
+    height: 95vh;
     margin-top: 1%;
     margin-left: 1%;
     width: 900px;
@@ -68,7 +68,7 @@ body {
     align-items: flex-start;
     transition: 0.3s ease-in-out;
     transition-delay: 0.1s;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .container-sidebar:hover {
