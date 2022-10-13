@@ -1,6 +1,6 @@
 function toggle_visibility(id) {
   var e = document.getElementById(id);
-  e.style.height = ((e.style.height != '210%') ? '210%' : '0%');
+  e.style.height = ((e.style.height != '1500px') ? '1500px' : '0px');
 }
 
 
@@ -121,7 +121,7 @@ function menu(id) {
   var e = document.getElementById(id);
 e.style.height = ((e.style.height != '50vh') ? '50vh' : '0vh');
 e.style.width = ((e.style.width != '250px') ? '250px' : '0px');
-e.style.top = ((e.style.top != '17.7%') ? '17.7%' : '13%');
+e.style.top = ((e.style.top != '16vh') ? '16vh' : '12vh');
 e.style.left = ((e.style.left != '0%') ? '0%' : '1%');
 }
 

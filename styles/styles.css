@@ -58,7 +58,7 @@ body {
     background-color: var(--clr-white);
     border-radius: 10px;
     position: relative;
-    height: 95vh;
+    /* height: 95vh; */
     margin-top: 1%;
     margin-left: 1%;
     width: 900px;
@@ -68,8 +68,7 @@ body {
     align-items: flex-start;
     transition: 0.3s ease-in-out;
     transition-delay: 0.1s;
-    overflow: auto;
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .container-sidebar:hover {
@@ -309,7 +308,7 @@ h2 {
     height: 68.5vh;
     height: 0vh;
     width: 0px;
-    top: 13%;
+    top: 12vh;
     left: 1%;
     /* top: 15.2vh; */
     border-radius: 10px;
@@ -372,6 +371,7 @@ hr {
     left: 0;
     right: 0;
     top: 24%;
+    /* height: 1200px; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     column-gap: 20px;
@@ -382,7 +382,7 @@ hr {
 }
 
 .container-books2 {
-    height: 0%;
+    height: 0px;
     overflow: hidden;
     z-index: 999;
 }
