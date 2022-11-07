@@ -18,4 +18,4 @@ Deze pagina geeft aan waar er beschikbare werkplekken aanwezig zijn. Er staat ee
 ## Links
 Live website userstory 1: https://oba.student.fdnd.nl/
 
-Live website userstory 2: https://oba.student.fdnd.nl/OBA%202/reserveren.html
+Live website userstory 2: https://oba.student.fdnd.nl/OBA%202/reserveren.html 
