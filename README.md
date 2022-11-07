@@ -1,5 +1,3 @@
-Reserveer studieplek: https://oba.student.fdnd.nl/OBA%202/reserveren.html
-
 # Titel
 Repository voor userstories van de OBA
 
