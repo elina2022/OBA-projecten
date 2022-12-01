@@ -1,0 +1,163 @@
+:root{
+    --red: rgb(220, 0, 0);
+    --white: white;
+}
+
+*, html{
+    font-size: 16px;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: rgba(255, 255, 255, 0.500);
+    backdrop-filter: blur(1rem);
+    height: 5rem;
+    margin: 1rem auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: inset 0px 0px 10px -7px black;
+}
+
+#nav1, #nav2{
+    overflow-y: hidden;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+#nav1{
+    margin-left: 2rem;
+}
+
+#nav2{
+    margin-right: 2rem;
+    gap: 0rem;
+}
+
+.icons{
+    margin-bottom: 1.5rem;
+    width: 3.5rem;
+    filter: invert(22%) sepia(92%) saturate(6915%) hue-rotate(358deg) brightness(81%) contrast(119%);
+    margin-top: 0.7rem;
+    margin-left: 0.7rem;
+}
+
+#logo{
+    height: 7rem;
+    rotate: 270deg;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    bottom: 2rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.iconsContainer{
+    width: 5rem;
+    height: 5rem;
+    box-shadow: inset 0px 0px 10px -5px black;
+    overflow: hidden;
+}
+
+.iconsContainer:focus{
+    background-color: rgba(144, 144, 144, 0.5);
+    box-shadow: inset 0px 0px 10px -2px black;
+}
+
+main{
+    height: 120vh;
+    width: 100vw;
+    z-index: -1;
+    overflow-y: hidden;
+    position: relative;
+    border-bottom-right-radius: 100% 20%;
+    border-bottom-left-radius: 100% 20%;
+}
+
+#mapIMG{
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 130vh;
+    filter: blur(0.5rem);
+}
+
+#mapOverlay{
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 130vh;
+    background-color: rgba(255, 255, 255);
+    opacity: 0.5;
+}
+
+#map{
+    border: none;
+    margin: 14rem 0rem 0rem 5rem;
+    width: 89vw;
+    height: 73vh;
+    outline: var(--red) 0.2rem solid;
+    outline-offset: -0.5rem;
+    outline-offset: -1.5rem;
+    z-index: 100;
+
+}
+
+#containerRed{
+    position: absolute;
+    z-index: -1;
+    background-color: var(--red);
+    width: 60vw;
+    height: 75vh;
+    top: 8rem;
+    right: 0rem;
+    margin-right: 5rem;
+    box-sizing: border-box;
+    border-radius: 50px 0px 50px 0px;
+    outline: var(--white) 0.2rem solid;
+    outline-offset: -1rem;
+}
+
+h1{
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 2.5rem;
+    box-sizing: border-box;
+}
+
+#descriptionList{
+    margin: 8rem 0rem 0rem 6rem;
+    outline: var(--red) 0.15rem solid;
+    outline-offset: -0.5rem;
+    background-color: white;
+    padding: 0.6rem 1rem 0.6rem 1.5rem;
+    width: 28vw;
+    position: absolute;
+    color: var(--red);
+    border-radius: 0px 20px 0px 20px;
+    background-color: rgba(255, 255, 255, 0.697);
+}
+
+.descriptionDetails{
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+input{
+    z-index: 10;
+    margin-top: 2.3rem;
+    margin-left: 27rem;
+    font-size: 2rem;
+    border: solid 0.1rem black;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    padding: 0.2rem;
+}

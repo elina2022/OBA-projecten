@@ -1,0 +1,578 @@
+:root {
+    --red: rgb(255, 0, 0);
+    --black: rgb(0, 0, 0);
+    --blueblack: #223434;
+    --darkgrey: #333;
+    --lightgray: #6f6f6f;
+    --white: rgb(255, 255, 255);
+    --search-border: #e6e6e6;
+    --search-bg: #f6f6f6;
+    --hr: rgb(200, 200, 200);
+    --footer-height: 20rem;
+}
+
+@font-face {
+    font-family: AvenirRoman;
+    src: url(font/Avenir-roman.ttf);
+}
+
+@font-face {
+    font-family: AvenirMedium;
+    src: url(/font/Avenir-medium.ttf);
+}
+
+@font-face {
+    font-family: AvenirBlack;
+    src: url(font/Avenir\-black.ttf);
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: avenirroman, Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0rem 1rem 0rem 1rem;
+    color: var(--black);
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+* {
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+#logo {
+    margin-top: -1rem;
+    width: 5rem;
+    transform: rotate(270deg) translateY(20%);
+    cursor: pointer;
+}
+
+#navUl {
+    display: flex;
+    margin-top: -2rem;
+    font-size: 1.3;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--hr);
+    font-family: avenirblack, Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.navIcons:hover {
+    filter: invert(24%) sepia(90%) saturate(6608%) hue-rotate(355deg) brightness(100%) contrast(124%);
+}
+
+.navItems:hover{
+    color: red;
+}
+
+.navItems:hover > .navIcons{
+    filter: invert(24%) sepia(90%) saturate(6608%) hue-rotate(355deg) brightness(100%) contrast(124%);
+}
+
+.navItems:hover > .more{
+    filter: invert(24%) sepia(90%) saturate(6608%) hue-rotate(355deg) brightness(100%) contrast(124%);
+}
+
+.more:hover{
+    filter: invert(24%) sepia(90%) saturate(6608%) hue-rotate(355deg) brightness(100%) contrast(124%);
+}
+
+.navIcons {
+    width: 1.3rem;
+    padding-right: 0.5rem;
+    top: 0.3rem;
+    position: relative;
+}
+
+.more, .more2 {
+    position: relative;
+    width: 1.3rem;
+    rotate: 90deg;
+    top: 0.4rem;
+}
+
+.navItems {
+    padding-right: 1.5rem;
+    font-family: avenirblack, Arial, Helvetica, sans-serif;
+}
+
+#image {
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0% 50%;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-family: avenirblack, Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+
+h2{
+    margin-top: -0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 100;
+    color: var(--darkgrey);
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--hr);
+}
+
+#dikResultaat{
+    color: var(--black);
+    font-size: 1rem;
+}
+
+#verfijnen {
+    width: 200px;
+    width: 17%;
+    float: left;
+    margin-right: 5%;
+    margin-top: 2rem;
+}
+
+.faciliteiten:hover{
+    color: red;
+}
+
+.underline:hover{
+    text-decoration: underline;
+}
+
+.faciliteiten:hover .facIcons{
+    filter: invert(24%) sepia(90%) saturate(6608%) hue-rotate(355deg) brightness(100%) contrast(124%);
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
+}
+
+input {
+    cursor: text;
+    accent-color: var(--red);
+    caret-color: var(--red);
+}
+
+.checks{
+    cursor: pointer;
+}
+
+.faciliteiten {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.facIcons {
+    width: 1.5rem;
+    position: relative;
+    top: 0.3rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.wifi,
+.computer,
+.stilteruimte {
+    width: 1.4rem;
+}
+
+.cafe,
+.stilteruimte {
+    width: 1.6rem;
+}
+
+.facNumber {
+    color: var(--darkgrey);
+}
+
+#section1 {
+    margin-top: 2rem;
+    float: right;
+    width: 78%;
+    margin-bottom: -4rem;
+}
+
+h3 {
+    margin-top: 2rem;
+    font-weight: 200;
+    font-family: avenirmedium, Arial, Helvetica, sans-serif;
+}
+
+input[type="text"] {
+    margin-left: 0.5rem;
+    width: 4rem;
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--black);
+    background-color: var(--search-bg);
+    border: 1px solid var(--search-border);
+}
+
+input[type="text"]:hover,
+input[type="text"]:active, 
+input[type="text"]:focus {
+    border: 1px solid var(--black);
+    outline: none;
+}
+
+input[type="text"]::placeholder {
+    color: var(--lightgray);
+}
+
+#map {
+    width: 58rem;
+    width: 100%;
+    height: 40rem;
+    margin-top: -.5rem;
+    margin-bottom: 10rem;
+}
+
+#sectionLi{
+    margin-bottom: var(--footer-height);
+    border-top: 1px solid var(--hr);
+}
+
+#listWerkplekken {
+    margin-top: -5rem;
+    width: 46%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 270rem;
+    width: 100%;
+}
+
+#break{
+    /* flex-basis: 100%; */
+}
+
+.vestiging {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0px 0px 7px -2px black;
+    padding: 0.5rem 1.5rem;
+    box-sizing: border-box;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vestigingNaam{
+    font-size: 1.2rem;
+    font-family: avenirblack, Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    margin-bottom: .9rem;
+}
+
+.openingstijden {
+    font-family: avenirroman, Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--hr);
+    padding-bottom: 0.5rem;
+    color: var(--darkgrey);
+}
+
+.facIconsLi1 {
+    margin-top: .8rem;
+}
+
+.facIconsUl {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.facIconsLi {
+    width: 1rem;
+    position: relative;
+    top: 0.2rem;
+    opacity: 0.2;
+}
+
+.facIconsLiAvailable{
+    width: 1rem;
+    position: relative;
+    top: 0.2rem;
+    opacity: 1;
+}
+
+.facNum{
+    margin-left: -1rem;
+    font-size: 0.9rem;
+    margin-top: 0.45rem;
+    font-family: avenirroman, Arial, Helvetica, sans-serif;
+}
+
+.boekButton{
+    margin-top: .2rem;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0rem 0.1rem .3rem .5rem;
+    cursor: pointer;
+    border: none;
+}
+
+.boekButton:hover, .boekButton:active, .boekButton:focus{
+    background-color: #454545;
+    outline: 1px solid var(--black);
+}
+
+.more2{
+    width: 1.1rem;
+    rotate: 0deg;
+    margin-left: .3rem;
+    top: 0.25rem;
+    fill: white;
+}
+
+footer {
+    background-color: var(--black);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: var(--footer-height);
+}
+
+#containerFooterBoth {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    padding-bottom: 2rem;
+}
+
+.containerFooter1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -0.5rem;
+}
+
+.containerFooter2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+#aanmelden {
+    color: var(--white);
+}
+
+#aanmeldenButton:hover {
+    color: var(--red);
+}
+
+input[type="submit"]{
+    cursor: pointer;
+}
+
+#socialList {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1.1rem;
+}
+
+.social {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(134deg) brightness(103%) contrast(102%);
+}
+
+#nieuwsbrief {
+    background-color: transparent;
+    border: none;
+    border: 1px solid var(--red);
+    width: 20rem;
+    position: relative;
+    margin-right: 1rem;
+    padding: 0.3rem 0.7rem;
+    padding: 0.6rem;
+    color: white;
+}
+
+#aanmeldenButton {
+    background-color: var(--black);
+    border: 1px solid var(--red);
+    color: var(--white);
+    padding: 0.6rem;
+    letter-spacing: 0.12rem;
+    font-family: avenirmedium, Arial, Helvetica, sans-serif;
+}
+
+#containerLogos {
+    border-bottom: 1px solid var(--white);
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0rem;
+    width: 1200px;
+}
+
+.logos {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(134deg) brightness(103%) contrast(102%);
+    width: 3.5rem;
+}
+
+.logos:hover, .logos:active, .logos:focus {
+    filter: invert(24%) sepia(90%) saturate(6608%) hue-rotate(355deg) brightness(100%) contrast(124%);
+    outline: none;
+}
+
+.afro {
+    width: 5rem;
+}
+
+#logoFull {
+    width: 28rem;
+    margin-top: -3rem;
+}
+
+#listContact {
+    display: flex;
+    gap: 4rem;
+    color: var(--black);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(134deg) brightness(103%) contrast(102%);
+}
+
+.contact {
+    font-family: avenirmedium, Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
+
+.contactIcon {
+    padding-right: 1rem;
+    position: relative;
+    top: 0.2rem;
+}
+
+.mailIcons {
+    top: 0.3rem;
+}
+
+
+
+/* footer{
+        background-color: var(--black);
+        position: absolute;
+        bottom: 0;
+        width: 1200px;
+        height: var(--footer-height);
+    }
+    
+    #containerFooterBoth{
+        display: flex;
+        gap: 2rem;
+        align-items: end;
+        margin-top: -2rem;
+    }
+    
+    .containerFooter1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40rem;
+    }
+    
+    .containerFooter2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    #aanmelden{
+        color: var(--white);
+        font-family: avenirmedium, Arial, Helvetica, sans-serif;
+        margin-top: 4rem;
+    }
+    
+    #socialList{
+        display: flex;
+        justify-content: center;
+        gap: 3.7rem;
+        width: 100%;
+        margin-left: 0.6rem;
+    }
+    
+    .social{
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(134deg) brightness(103%) contrast(102%);
+    }
+    
+    #nieuwsbrief{
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid var(--red);
+        width: 20rem;
+        position: relative;
+        top: 0.4rem;
+        margin-right: 1rem;
+        padding: 0.3rem 0.7rem;
+    }
+    
+    #aanmeldenButton{
+        background-color: var(--black);
+        border: 1px solid var(--red);
+        color: var(--white);
+        padding: 0.6rem;
+        letter-spacing: 0.12rem;
+    }
+    
+    #containerLogos{
+        border-top: 1px solid var(--white);
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1.5rem 0rem;
+        margin-top: 1.5rem;
+    }
+    
+    .logos{
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(134deg) brightness(103%) contrast(102%);
+        width: 3.5rem;
+    }
+    
+    .afro {
+        width: 5rem;
+    }
+    
+    #logoFull{
+        width: 28rem;
+        position: relative;
+        padding-left: 2rem;
+        margin-bottom: -3.3rem;
+    }
+    
+    #listContact{
+        margin-top: 3rem;
+        margin-bottom: 1.2rem;
+        display: flex;
+        gap: 4rem;
+        color: var(--black);
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(134deg) brightness(103%) contrast(102%);
+    }
+    
+    .contact{
+        font-family: avenirmedium, Arial, Helvetica, sans-serif;
+        font-size: 0.9rem;
+    }
+    
+    .contactIcon{
+        padding-right: 1rem;
+        position: relative;
+        top: 0.2rem;
+    }
+    
+    .mailIcons{
+        top: 0.3rem;
+    } */
