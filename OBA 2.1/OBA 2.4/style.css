@@ -9,6 +9,7 @@
     --search-bg: #f6f6f6;
     --hr: rgb(200, 200, 200);
     --footer-height: 20rem;
+    --transition-time: .5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 @font-face {
@@ -44,6 +45,7 @@ body {
 * {
     padding-inline-start: 0;
     list-style: none;
+    outline: none;
 }
 
 #logo {
@@ -155,10 +157,27 @@ input[type="checkbox"]{
     cursor: pointer;
 }
 
-input {
+#postcode {
     cursor: text;
     accent-color: var(--red);
     caret-color: var(--red);
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    width: auto;
+    font-size: 1.2rem;
+    background-color: var(--search-bg);
+    border: 1px solid var(--search-border);
+}
+
+#postcode:hover,
+#postcode:active, 
+#postcode:focus {
+    border: 1px solid var(--black);
+}
+
+#postcode {
+    color: var(--lightgray);
 }
 
 .checks{
@@ -178,14 +197,14 @@ input {
     padding-left: 0.5rem;
 }
 
-.wifi,
-.computer,
-.stilteruimte {
+.wifi1,
+.computer1,
+.stilteruimte1 {
     width: 1.4rem;
 }
 
-.cafe,
-.stilteruimte {
+.cafe1,
+.stilteruimte1 {
     width: 1.6rem;
 }
 
@@ -206,27 +225,6 @@ h3 {
     font-family: avenirmedium, Arial, Helvetica, sans-serif;
 }
 
-input[type="text"] {
-    margin-left: 0.5rem;
-    width: 4rem;
-    padding: 0.2rem 0.5rem;
-    font-size: 1rem;
-    border: 1px solid var(--black);
-    background-color: var(--search-bg);
-    border: 1px solid var(--search-border);
-}
-
-input[type="text"]:hover,
-input[type="text"]:active, 
-input[type="text"]:focus {
-    border: 1px solid var(--black);
-    outline: none;
-}
-
-input[type="text"]::placeholder {
-    color: var(--lightgray);
-}
-
 #map {
     width: 58rem;
     width: 100%;
@@ -237,7 +235,6 @@ input[type="text"]::placeholder {
 
 #sectionLi{
     margin-bottom: var(--footer-height);
-    border-top: 1px solid var(--hr);
 }
 
 #listWerkplekken {
@@ -246,7 +243,7 @@ input[type="text"]::placeholder {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 270rem;
+    height: 290rem;
     width: 100%;
 }
 
@@ -268,8 +265,7 @@ input[type="text"]::placeholder {
 .vestigingNaam{
     font-size: 1.2rem;
     font-family: avenirblack, Arial, Helvetica, sans-serif;
-    text-decoration: underline;
-    margin-bottom: .9rem;
+    margin-bottom: .8rem;
 }
 
 .openingstijden {
@@ -288,7 +284,7 @@ input[type="text"]::placeholder {
     display: flex;
     gap: 2rem;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
 }
 
 .facIconsLi {
@@ -304,8 +300,74 @@ input[type="text"]::placeholder {
     top: 0.2rem;
     opacity: 1;
 }
+.wifi, .stopcontact, .computer, .printer, .toilet, .cafe, .stilteruimte, .facNum {
+    letter-spacing: 1px;
+    font-size: .8rem;
+    background-color: rgba(50, 50, 50);
+    border-radius: 5px;
+    color: white;
+    padding: .2rem .4rem;
+    position: absolute;
+    z-index: 1;
+    margin-top: -1.5rem;
+    visibility: hidden;
+}
+.wifi::before, .stopcontact::before, .computer::before, .printer::before, .toilet::before, .cafe::before, .stilteruimte::before, .facNum::before {
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 0;
+    top: 100%;
+    left: 40%;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;  
+    border-top: 0.4rem solid rgb(50, 50, 50);
+}
 
-.facNum{
+.wifi{ margin-left: -1.75rem; }
+.wifi::before{ margin-left: -.2rem; }
+
+.stopcontact{ margin-left: -3.4rem; }
+.stopcontact::before{ margin-left: .2rem; }
+
+.computer{ margin-left: -2.9rem; }
+
+.printer{ margin-left: -2.2rem; }
+.printer::before{ margin-left: -.2rem; }
+
+.toilet{ margin-left: -2rem; }
+.toilet::before{ margin-left: -.1rem; }
+
+.cafe{ margin-left: -1.8rem; }
+.cafe::before{ margin-left: -.3rem; }
+
+.stilteruimte{ margin-left: -3.3rem; }
+.stilteruimte::before{ margin-left: .1rem; }
+
+.facNum{ margin-left: -16.4rem; margin-top: -1.95rem;}
+.facNum::before{ margin-left: 8.2rem; }
+
+#facNum{
+    cursor: default;
+}
+
+#wifi:hover ~ .wifi{ visibility: visible; }
+#stopcontact:hover ~ .stopcontact{ visibility: visible; }
+#computer:hover ~ .computer{ visibility: visible; }
+#printer:hover ~ .printer{ visibility: visible; }
+#toilet:hover ~ .toilet{ visibility: visible; }
+#cafe:hover ~ .cafe{ visibility: visible; }
+#stilteruimte:hover ~ .stilteruimte{ visibility: visible; }
+#facNum:hover .facNum{ visibility: visible; }
+
+
+
+
+
+
+
+
+#facNum{
     margin-left: -1rem;
     font-size: 0.9rem;
     margin-top: 0.45rem;
@@ -314,16 +376,19 @@ input[type="text"]::placeholder {
 
 .boekButton{
     margin-top: .2rem;
+    position: relative;
+    top: 0;
     background-color: var(--black);
     color: var(--white);
-    padding: 0rem 0.1rem .3rem .5rem;
+    padding: 0rem .1rem .3rem .5rem;
     cursor: pointer;
     border: none;
+    transition: var(--transition-time);
+    width: 6.5rem;
 }
 
-.boekButton:hover, .boekButton:active, .boekButton:focus{
+.boekButton:hover, .boekButton:active{
     background-color: #454545;
-    outline: 1px solid var(--black);
 }
 
 .more2{
@@ -331,7 +396,8 @@ input[type="text"]::placeholder {
     rotate: 0deg;
     margin-left: .3rem;
     top: 0.25rem;
-    fill: white;
+    fill: var(--white);
+    transition: var(--transition-time);
 }
 
 footer {
@@ -403,6 +469,12 @@ input[type="submit"]{
     color: white;
 }
 
+#nieuwsbrief:hover, 
+#nieuwsbrief:active, 
+#nieuwsbrief:focus {
+    border-color: white;
+}
+
 #aanmeldenButton {
     background-color: var(--black);
     border: 1px solid var(--red);
@@ -427,7 +499,6 @@ input[type="submit"]{
 
 .logos:hover, .logos:active, .logos:focus {
     filter: invert(24%) sepia(90%) saturate(6608%) hue-rotate(355deg) brightness(100%) contrast(124%);
-    outline: none;
 }
 
 .afro {
@@ -461,118 +532,59 @@ input[type="submit"]{
     top: 0.3rem;
 }
 
+.tijdenList {
+    display: flex;
+    /* background-color: rgb(202, 202, 202); */
+    width: 21.5rem;
+    overflow-y: hidden;
+    gap: .3rem;
+    height: 3rem;
+    /* -webkit-mask: linear-gradient(90deg,#0000,#000 0% 90%,#0000); */
+}
 
+.begintijd, .eindtijd{
+    font-size: .8rem;
+    font-family: avenirmedium, Arial, Helvetica, sans-serif;
+    margin-bottom: .2rem;
+}
 
-/* footer{
-        background-color: var(--black);
-        position: absolute;
-        bottom: 0;
-        width: 1200px;
-        height: var(--footer-height);
-    }
-    
-    #containerFooterBoth{
-        display: flex;
-        gap: 2rem;
-        align-items: end;
-        margin-top: -2rem;
-    }
-    
-    .containerFooter1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 40rem;
-    }
-    
-    .containerFooter2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-    
-    #aanmelden{
-        color: var(--white);
-        font-family: avenirmedium, Arial, Helvetica, sans-serif;
-        margin-top: 4rem;
-    }
-    
-    #socialList{
-        display: flex;
-        justify-content: center;
-        gap: 3.7rem;
-        width: 100%;
-        margin-left: 0.6rem;
-    }
-    
-    .social{
-        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(134deg) brightness(103%) contrast(102%);
-    }
-    
-    #nieuwsbrief{
-        background-color: transparent;
-        border: none;
-        border-bottom: 1px solid var(--red);
-        width: 20rem;
-        position: relative;
-        top: 0.4rem;
-        margin-right: 1rem;
-        padding: 0.3rem 0.7rem;
-    }
-    
-    #aanmeldenButton{
-        background-color: var(--black);
-        border: 1px solid var(--red);
-        color: var(--white);
-        padding: 0.6rem;
-        letter-spacing: 0.12rem;
-    }
-    
-    #containerLogos{
-        border-top: 1px solid var(--white);
-        display: flex;
-        justify-content: space-evenly;
-        padding: 1.5rem 0rem;
-        margin-top: 1.5rem;
-    }
-    
-    .logos{
-        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(134deg) brightness(103%) contrast(102%);
-        width: 3.5rem;
-    }
-    
-    .afro {
-        width: 5rem;
-    }
-    
-    #logoFull{
-        width: 28rem;
-        position: relative;
-        padding-left: 2rem;
-        margin-bottom: -3.3rem;
-    }
-    
-    #listContact{
-        margin-top: 3rem;
-        margin-bottom: 1.2rem;
-        display: flex;
-        gap: 4rem;
-        color: var(--black);
-        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(134deg) brightness(103%) contrast(102%);
-    }
-    
-    .contact{
-        font-family: avenirmedium, Arial, Helvetica, sans-serif;
-        font-size: 0.9rem;
-    }
-    
-    .contactIcon{
-        padding-right: 1rem;
-        position: relative;
-        top: 0.2rem;
-    }
-    
-    .mailIcons{
-        top: 0.3rem;
-    } */
+.eindtijd{
+    margin-top: 1.5rem;
+}
+
+time{
+    padding: .2rem .4rem;
+    font-size: .9rem;
+    border-radius: .3rem;
+    box-shadow: inset 0px 0px 4px 0px black;
+}
+
+.timeNotAvailable{
+    opacity: 0.4;
+}
+
+.timeAvailable, .timeAvailable2{
+    cursor: pointer;
+}
+
+#containerBegintijd, #containerEindtijd{
+    overflow: hidden;
+    height: 0rem;
+    transition: var(--transition-time);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0px 0px 3px 0px var(--black);
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar {
+    height: .4rem;
+    background-color: rgb(245, 245, 245);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    -webkit-box-shadow: inset 0px 0px 3px 2px var(--black);
+    background-color: rgb(150, 150, 150);
+}
