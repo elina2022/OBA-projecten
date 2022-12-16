@@ -10,6 +10,14 @@
     --hr: rgb(200, 200, 200);
     --footer-height: 20rem;
     --transition-time: .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --font-1: 13rem;
+    --font-2: 7.97rem;
+    --font-3: 4.74rem;
+    --font-4: 2.82rem;
+    --font-5: 1.68rem;
+    --font-6: 1rem;
+    --font-7: 0.6rem;
+    --font-8: 0.35rem;
 }
 
 @font-face {
@@ -26,11 +34,17 @@
     font-family: AvenirBlack;
     src: url(font/Avenir\-black.ttf);
 }
+/* reset */
+* {
+    box-sizing:border-box
+}
 
+/* base */
 html {
     position: relative;
     min-height: 100%;
 }
+
 
 body {
     font-family: avenirroman, Arial, Helvetica, sans-serif;
@@ -118,6 +132,7 @@ h1 {
     font-family: avenirblack, Arial, Helvetica, sans-serif;
     display: inline-block;
 }
+
 
 h2{
     margin-top: -0.5rem;
@@ -539,7 +554,7 @@ input[type="submit"]{
     overflow-y: hidden;
     gap: .3rem;
     height: 3rem;
-    /* -webkit-mask: linear-gradient(90deg,#0000,#000 0% 90%,#0000); */
+    -webkit-mask: linear-gradient(90deg,#0000,#000 0% 90%,#0000);
 }
 
 .begintijd, .eindtijd{
@@ -557,6 +572,9 @@ time{
     font-size: .9rem;
     border-radius: .3rem;
     box-shadow: inset 0px 0px 4px 0px black;
+    /* background-color: rgb(50, 50, 50);
+    color: white;
+    box-shadow: inset 0px 0px 5px 2px black; */
 }
 
 .timeNotAvailable{
@@ -573,17 +591,18 @@ time{
     transition: var(--transition-time);
 }
 
-::-webkit-scrollbar-track {
+.tijdenList::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0px 0px 3px 0px var(--black);
     border-radius: 100px;
+    cursor: pointer;
 }
 
-::-webkit-scrollbar {
+.tijdenList::-webkit-scrollbar {
     height: .4rem;
     background-color: rgb(245, 245, 245);
 }
 
-::-webkit-scrollbar-thumb {
+.tijdenList::-webkit-scrollbar-thumb {
     border-radius: 100px;
     -webkit-box-shadow: inset 0px 0px 3px 2px var(--black);
     background-color: rgb(150, 150, 150);

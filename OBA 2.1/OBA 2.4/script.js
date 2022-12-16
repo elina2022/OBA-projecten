@@ -26,14 +26,15 @@ function showTijd(){
 }
 
 function buttonComesDown(){
-    btnText.innerHTML = "Ga verder"
-    arrow.style.rotate = "0deg"
-    btn.style.top = "4.2rem"
-    btn.style.backgroundColor = "rgb(245, 245, 245)"
-    btn.style.boxShadow = "inset 0px 0px 4px 0px black"
-    // btn.style.border = "1px solid black"
-    btnText.style.color = "black"
-    arrow.style.fill = "black"
+    if(btnText.innerHTML == "Reserveer"){
+        btnText.innerHTML = "Ga verder"
+        arrow.style.rotate = "0deg"
+        btn.style.top = "4.2rem"
+        btn.style.backgroundColor = "rgb(245, 245, 245)"
+        btn.style.boxShadow = "inset 0px 0px 4px 0px black"
+        btnText.style.color = "black"
+        arrow.style.fill = "black"
+    }
 }
 
 function buttonComesDown2(){
@@ -51,14 +52,33 @@ function done(){
     } 
 }
 
-// let logo = document.querySelector("#logo");
-// logo = true
-// function toggle(){
-//     if(logo === true){
-//     logo.style.width = "1000px"
-//     logo = false
-// } else {
-//     logo.style.width = "10px"
-//     logo = true
+function timeStyle(arrayNum){
+    tijdenAlle[arrayNum].style.backgroundColor = "rgb(40, 40, 40)"
+    tijdenAlle[arrayNum].style.color = "white"
+    tijdenAlle[arrayNum].style.boxShadow = "inset 0px 0px 5px 2px black"
+}
+
+for (let index = 0; index < tijdenAlle.length; index++) {
+    tijdenAlle[index].addEventListener("click", () => { timeStyle(index) })
+}
+
+
+
+
+
+
+
+
+
+
+// function checkboxCountAndHighlight(checkbox, parentElement, rl, naam, color) {
+//     let progress = checkbox.closest(".rl-cards").querySelectorAll('input[type=checkbox]:checked').length;
+
+//     if(parentElement === rl) {
+//             checkbox.closest(".rl-card").classList.toggle("rl-card-border");
+//             countHighlighter(naam, parentElement, progress, color);
+//     }
 // }
-// }
+
+// checkboxCountAndHighlight(checkbox, parentElement, "rl-waarneembaar", "waarneembaar", "countColor")
+
